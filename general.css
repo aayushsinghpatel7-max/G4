@@ -1,0 +1,66 @@
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Montserrat';
+    color: white;
+    background-color: #222;
+}
+
+body {
+    text-align: center;
+}
+
+.box {
+    margin: 40px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #444;
+    border-style: solid;
+    border-color: #526b80; 
+}
+
+.timeline {
+    display: block;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.timeline-item:hover {
+    background-color: #555;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #df5460;
+}
+
+.timeline-container a {
+    text-decoration: none;
+    color: white;
+}
+
+footer { /* fix footer to go to end of page  */
+    font-size: 100%;
+    background-color: #333;
+    max-width: 100%;
+    padding: 10px 0;
+}
