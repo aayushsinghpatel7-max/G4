@@ -1,0 +1,136 @@
+/* =========================================================
+   CREDITS PAGE — retro game outro
+   ========================================================= */
+/* PURPOSE: Simulates the end credits of a classic video game.
+   The goal is to make it feel like the player has “finished the game.”
+   HOW: uses a dark gradient background, subtle stars, and glowing white text
+   that scrolls upward over time while remaining scrollable manually.
+*/
+
+/* === PAGE BACKGROUND === */
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-y: scroll; /* keeps manual scroll enabled */
+  background: radial-gradient(circle at center, #0a0a0f 0%, #000 80%);
+  font-family: 'Courier New', monospace;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 800px; /* adds subtle depth for text */
+}
+
+/* === STARFIELD BACKGROUND === */
+/* PURPOSE: Adds faint moving stars to create a sense of space and motion.
+   HOW: by repeating radial gradient + animation shifts background position slowly. */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(2px 2px at 10px 10px, #00e0ff, transparent 40%),
+    radial-gradient(1px 1px at 50px 80px, #fff, transparent 40%),
+    radial-gradient(1px 1px at 90px 30px, #df5460, transparent 40%);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: starsMove 30s linear infinite;
+  z-index: -1;
+  opacity: 0.3;
+}
+@keyframes starsMove {
+  from { background-position: 0 0; }
+  to { background-position: -400px 800px; }
+}
+
+/* === CREDITS CONTAINER === */
+/* PURPOSE: Holds all the credit lines and animates them slowly upward.
+   HOW: flex column + infinite loop scroll. Also allows manual scroll for review. */
+.credits-container {
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  animation: slowScroll 120s linear infinite;
+}
+@keyframes slowScroll {
+  from { transform: translateY(50vh); }
+  to   { transform: translateY(-250%); }
+}
+
+/* === INDIVIDUAL CREDIT LINES === */
+/* PURPOSE: Display contributor names and roles with glowing readability.
+   HOW: use white text + cyan/pink glow depending on importance. */
+.credit-title {
+  font-size: 2rem;
+  color: #00e0ff;
+  text-shadow: 0 0 15px #00e0ff, 0 0 30px #00e0ff;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.credit-section {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  text-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+.credit-role {
+  color: #df5460;
+  text-shadow: 0 0 10px #df5460;
+  font-weight: bold;
+}
+
+.credit-name {
+  color: #eaeaea;
+  font-weight: normal;
+  text-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+/* === SPECIAL THANKS SECTION === */
+.special-thanks {
+  margin-top: 3rem;
+  color: #00e0ff;
+  font-style: italic;
+  text-shadow: 0 0 10px #00e0ff;
+}
+
+/* === END MESSAGE === */
+/* PURPOSE: Final message simulates a game over or restart screen.  
+   HOW: centered large text that pulses subtly to look like old CRT text. */
+.end-message {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  color: #df5460;
+  text-shadow: 0 0 20px #df5460, 0 0 40px rgba(223,84,96,0.5);
+  animation: pulseText 1.5s infinite alternate;
+}
+@keyframes pulseText {
+  from { opacity: 0.6; text-shadow: 0 0 10px #df5460; }
+  to { opacity: 1; text-shadow: 0 0 25px #df5460, 0 0 50px rgba(223,84,96,0.8); }
+}
+
+/* === OPTIONAL HOVER EFFECTS === */
+/* Adds interactivity if users hover over names (just for fun). */
+.credit-name:hover {
+  color: #00e0ff;
+  text-shadow: 0 0 15px #00e0ff;
+  transition: all 0.3s ease;
+}
+
+/* === SCROLLBAR STYLING (optional polish) === */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#00e0ff, #df5460);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
