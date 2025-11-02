@@ -2,15 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./general.css">
-    <link rel="stylesheet" href="./navigation.css">
-    <title>Home Page</title>
+
+    <!-- 
+        PROJECT: History of Video Games 
+        PAGE: General Overview / Home Page
+        PURPOSE: Acts as the home hub that introduces the topic and links to all game eras.
+    -->
+
+    <!-- Link to main general styles (layout, timeline, colors) -->
+    <link rel="stylesheet" href="./CSS/general.css">
+
+    <!-- Link to navigation bar styles (menu, hover, dropdowns) -->
+    <link rel="stylesheet" href="./CSS/navigation.css">
+
+    <title>History of Video Games - Home</title>
 </head>
 
 <body>
+
+    <!-- =========================================================
+         NAVIGATION BAR
+         =========================================================
+         PURPOSE: Provides links to each era page + current section indicator.
+         Controlled by navigation.css.
+    -->
     <nav>
         <ul class="nav">
+            <!-- "currentsection" highlights this link in neon pink/red -->
             <li><a href="./general.html" id="currentsection">Home</a></li>
+
+            <!-- Each main category has its own dropdown (subnav) -->
             <li>
                 <a href="./era1.html">Arcade Games</a>
                 <ul class="subnav">
@@ -19,6 +40,7 @@
                     <li><a href="./section3.html">Section 3</a></li>
                 </ul>
             </li>
+
             <li>
                 <a href="./era2.html">8 Bit and 16 Bit Games</a>
                 <ul class="subnav">
@@ -27,6 +49,7 @@
                     <li><a href="./section3.html">Section 3</a></li>
                 </ul>
             </li>
+
             <li>
                 <a href="./era3.html">Home Consoles</a>
                 <ul class="subnav">
@@ -35,14 +58,16 @@
                     <li><a href="./section3.html">Section 3</a></li>
                 </ul>
             </li>
+
             <li>
-                <a href="./era4.html">3D games</a>
+                <a href="./era4.html">3D Games</a>
                 <ul class="subnav">
                     <li><a href="./section1.html">Section 1</a></li>
                     <li><a href="./section2.html">Section 2</a></li>
                     <li><a href="./section3.html">Section 3</a></li>
                 </ul>
             </li>
+
             <li>
                 <a href="./era5.html">HD and Indie Games</a>
                 <ul class="subnav">
@@ -51,6 +76,7 @@
                     <li><a href="./section3.html">Section 3</a></li>
                 </ul>
             </li>
+
             <li>
                 <a href="./era6.html">Modern Games</a>
                 <ul class="subnav">
@@ -59,71 +85,114 @@
                     <li><a href="./section3.html">Section 3</a></li>
                 </ul>
             </li>
-            <li><a href="./general.html">Appendix</a></li>
 
+            <!-- Link to your new credits page -->
+            <li><a href="./credits.html">Credits</a></li>
         </ul>
-    </nav>   
+    </nav>
 
+    <!-- =========================================================
+         MAIN INTRO SECTION
+         =========================================================
+         PURPOSE: Welcomes visitors and gives a short description
+         of what the site will cover.
+         The .box class styles this as a neon-edged content container.
+    -->
     <div class="box">
         <h1>History of Video Games</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula metus, interdum ac vulputate vel, blandit id odio. Nam quis eros sollicitudin, pretium nunc ut, ullamcorper erat. Ut nec erat tristique, vulputate lectus venenatis, luctus arcu. Nunc at posuere metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien velit, sagittis sed rutrum eget, dapibus eget augue. Morbi quis mattis dui, a accumsan leo. Mauris a maximus augue, quis mollis nisl. Sed eget risus at felis eleifend pharetra. Fusce venenatis, nisi eu commodo ornare, enim orci tristique urna, quis gravida mauris ex sed tellus.</p>
+        <p>
+            From pixelated arcade classics to sprawling modern open worlds,
+            video games have evolved into one of the most complex and creative
+            art forms of our time. This project explores the major eras of gaming,
+            their cultural impact, and how technology shaped the way we play.
+        </p>
     </div>
 
+    <!-- =========================================================
+         TIMELINE SECTION
+         =========================================================
+         PURPOSE: Acts as an overview “map” of all the eras.
+         Each timeline item links to a detailed HTML page.
+         Controlled mainly by .timeline and .timeline-item in general.css.
+    -->
     <div class="timeline">
         <h2>Timeline of Video Game History</h2>
+
         <div class="timeline-container">
+
+            <!-- Each .timeline-item is clickable and visually styled as a 3D glowing card -->
             <a href="./era1.html">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>YYYYs - Arcade Games</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula metus, interdum ac vulputate vel, blandit id odio. Nam quis eros sollicitudin, pretium nunc ut, ullamcorper erat. Ut nec erat tristique, vulputate lectus venenatis, luctus arcu. Nunc at posuere metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien velit, sagittis sed rutrum eget, dapibus eget augue. Morbi quis mattis dui, a accumsan leo. Mauris a maximus augue, quis mollis nisl. Sed eget risus at felis eleifend pharetra. Fusce venenatis, nisi eu commodo ornare, enim orci tristique urna, quis gravida mauris ex sed tellus.</p>
+                        <h3>1970s–1980s — Arcade Games</h3>
+                        <p>The golden age of coin-operated machines that introduced
+                           classics like Space Invaders and Pac-Man, shaping the early
+                           foundations of interactive entertainment.</p>
                     </div>
                 </div>
             </a>
+
             <a href="./era2.html">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>YYYYs - 8 Bit and 16 Bit Games</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula metus, interdum ac vulputate vel, blandit id odio. Nam quis eros sollicitudin, pretium nunc ut, ullamcorper erat. Ut nec erat tristique, vulputate lectus venenatis, luctus arcu. Nunc at posuere metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien velit, sagittis sed rutrum eget, dapibus eget augue. Morbi quis mattis dui, a accumsan leo. Mauris a maximus augue, quis mollis nisl. Sed eget risus at felis eleifend pharetra. Fusce venenatis, nisi eu commodo ornare, enim orci tristique urna, quis gravida mauris ex sed tellus.</p>
+                        <h3>1980s–1990s — 8-Bit and 16-Bit Games</h3>
+                        <p>The birth of console gaming — from Nintendo and Sega rivalry
+                           to iconic franchises like Mario and Sonic.</p>
                     </div>
                 </div>
             </a>
+
             <a href="./era3.html">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>YYYYs - Home Consoles</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula metus, interdum ac vulputate vel, blandit id odio. Nam quis eros sollicitudin, pretium nunc ut, ullamcorper erat. Ut nec erat tristique, vulputate lectus venenatis, luctus arcu. Nunc at posuere metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien velit, sagittis sed rutrum eget, dapibus eget augue. Morbi quis mattis dui, a accumsan leo. Mauris a maximus augue, quis mollis nisl. Sed eget risus at felis eleifend pharetra. Fusce venenatis, nisi eu commodo ornare, enim orci tristique urna, quis gravida mauris ex sed tellus.</p>
+                        <h3>1990s — Home Consoles</h3>
+                        <p>The living room revolution: when home systems became powerful
+                           enough to rival arcade machines.</p>
                     </div>
                 </div>
             </a>
+
             <a href="./era4.html">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>YYYYs - 3D Games</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula metus, interdum ac vulputate vel, blandit id odio. Nam quis eros sollicitudin, pretium nunc ut, ullamcorper erat. Ut nec erat tristique, vulputate lectus venenatis, luctus arcu. Nunc at posuere metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien velit, sagittis sed rutrum eget, dapibus eget augue. Morbi quis mattis dui, a accumsan leo. Mauris a maximus augue, quis mollis nisl. Sed eget risus at felis eleifend pharetra. Fusce venenatis, nisi eu commodo ornare, enim orci tristique urna, quis gravida mauris ex sed tellus.</p>
+                        <h3>2000s — 3D Games</h3>
+                        <p>The jump into three dimensions transformed game worlds into
+                           immersive spaces, driven by PlayStation and PC innovation.</p>
                     </div>
                 </div>
             </a>
+
             <a href="./era5.html">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>YYYYs - HD and Indie Games</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula metus, interdum ac vulputate vel, blandit id odio. Nam quis eros sollicitudin, pretium nunc ut, ullamcorper erat. Ut nec erat tristique, vulputate lectus venenatis, luctus arcu. Nunc at posuere metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien velit, sagittis sed rutrum eget, dapibus eget augue. Morbi quis mattis dui, a accumsan leo. Mauris a maximus augue, quis mollis nisl. Sed eget risus at felis eleifend pharetra. Fusce venenatis, nisi eu commodo ornare, enim orci tristique urna, quis gravida mauris ex sed tellus.</p>
+                        <h3>2010s — HD and Indie Games</h3>
+                        <p>Independent creators redefined creativity as HD graphics and
+                           digital distribution opened new frontiers for storytelling.</p>
                     </div>
                 </div>
             </a>
+
             <a href="./era6.html">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>YYYYs - Modern Games</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula metus, interdum ac vulputate vel, blandit id odio. Nam quis eros sollicitudin, pretium nunc ut, ullamcorper erat. Ut nec erat tristique, vulputate lectus venenatis, luctus arcu. Nunc at posuere metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien velit, sagittis sed rutrum eget, dapibus eget augue. Morbi quis mattis dui, a accumsan leo. Mauris a maximus augue, quis mollis nisl. Sed eget risus at felis eleifend pharetra. Fusce venenatis, nisi eu commodo ornare, enim orci tristique urna, quis gravida mauris ex sed tellus.</p>
+                        <h3>2020s — Modern Games</h3>
+                        <p>From virtual reality to AI-driven design, games continue to evolve
+                           as the ultimate intersection of technology and imagination.</p>
                     </div>
                 </div>
             </a>
+
         </div>
     </div>
+
+    <!-- =========================================================
+         FOOTER
+         =========================================================
+         PURPOSE: Displays project info consistently across all pages.
+    -->
+    <footer>
+        History of Video Games — Group Assignment, Software Atelier 1.
+    </footer>
+
 </body>
-<footer>
-    History of Video Games - Group Assignment, Software Atelier 1.
-</footer>
 </html>

@@ -1,72 +1,157 @@
+/* =========================================================
+   NAVIGATION BAR — global site menu
+   ========================================================= */
+/* PURPOSE: fixed header that gives every page consistent access to sections. 
+   HOW: uses sticky positioning, neon glow, and transparency to echo the retro
+   game aesthetic while staying readable over dark backgrounds. */
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #222;
-    font-size: 110%;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    z-index: 1000; 
-    display: flex;
-    align-items: center;
+  background: rgba(15, 16, 20, 0.9);         /* translucent to show page below */
+  border-bottom: 2px solid #00e0ff;          /* neon-blue accent border */
+  position: sticky;                          /* keeps bar visible while scrolling */
+  top: 0;
+  width: 100%;
+  z-index: 1000;                             /* ensures nav always stays above content */
+  backdrop-filter: blur(6px);                /* subtle glass-like blur effect */
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.15); /* faint cyan glow around nav */
 }
 
+/* =========================================================
+   MAIN NAVIGATION LIST — horizontal layout for top links
+   ========================================================= */
+/* PURPOSE: structure menu items in a clean, centered row. 
+   HOW: flexbox ensures equal spacing and alignment across screen sizes. */
 .nav {
-    width: 100%;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;                                 /* spacing between top-level items */
 }
-.nav li {
-    position: relative;
-    text-align: center;
+
+/* Each main nav item is a container for links and submenus */
+.nav > li {
+  position: relative;                        /* required for dropdown absolute positioning */
 }
-.nav li a {
-    display: block;
-    padding: 10px 16px;
-    text-decoration: none;
-    color: #fff;
+
+/* =========================================================
+   TOP-LEVEL LINKS — main categories (e.g. "Arcade Games")
+   ========================================================= */
+/* PURPOSE: visually simple links that glow when hovered. 
+   HOW: smooth transitions change color + text glow for interactivity. */
+.nav > li > a {
+  color: #e8eef5;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-weight: 500;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
 }
-.nav li a:hover {
-    transition: background 0.3s;
-    background: #333;
+
+/* Hover state — links glow neon cyan */
+.nav > li > a:hover {
+  color: #00e0ff;
+  text-shadow: 0 0 8px #00e0ff;
 }
+
+/* Current page indicator — highlighted in accent pink/red */
 #currentsection {
-    font-weight: bold;
+  color: #df5460;
+  text-shadow: 0 0 8px rgba(223, 84, 96, 0.7);
 }
+
+/* =========================================================
+   UNDERLINE ANIMATION — neon line slides in on hover
+   ========================================================= */
+/* PURPOSE: subtle motion makes the navigation feel alive, like digital signal feedback. 
+   HOW: pseudo-element expands horizontally with scale transform. */
+.nav > li > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #00e0ff;
+  transform: scaleX(0);                      /* hidden by default */
+  transform-origin: left;                    /* expands from left side */
+  transition: transform 0.25s ease;
+  margin-top: 5px;
+}
+.nav > li > a:hover::after {
+  transform: scaleX(1);                      /* reveals animated underline */
+}
+
+/* =========================================================
+   DROPDOWN MENUS — appear under each top item
+   ========================================================= */
+/* PURPOSE: provide access to sub-sections (like Section 1–3). 
+   HOW: hidden by default; shown on hover using absolute positioning and fade animation. */
 .subnav {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background: #222;
-    font-size: 100%;
-    min-width: 120px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 0;
-    margin: 0;
-    z-index: 9999;
+  display: none;
+  position: absolute;
+  top: 100%;                                 /* aligns dropdown directly below parent */
+  left: 0;
+  background: rgba(28, 32, 40, 0.96);        /* darker semi-transparent panel */
+  border: 1px solid #333;
+  border-radius: 10px;
+  list-style: none;
+  padding: 10px 0;
+  margin-top: 5px;
+  min-width: 180px;                          /* consistent dropdown width */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  z-index: 999;                              /* ensures dropdown overlays content */
 }
-.subnav li {
-    list-style: none;
+
+/* Dropdown links */
+.subnav li a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Hover — invert to bright cyan background for tactile feedback */
+.subnav li a:hover {
+  background-color: #00e0ff;
+  color: #111;
+}
+
+/* =========================================================
+   SHOW DROPDOWN — triggered when hovering parent link
+   ========================================================= */
+/* PURPOSE: reveal dropdowns when hovering parent. 
+   HOW: “display: block” makes submenu visible, and fadeIn animates entry. */
 .nav li:hover .subnav {
-    display: block;
+  display: block;
+  animation: fadeIn 0.2s ease-in-out;
 }
-.subnav a {
-    display: block;
-    padding: 8px 14px;
-    text-decoration: none;
-    color: #222;
+
+/* Fade-in gives dropdowns a quick smooth entrance instead of popping instantly */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-.subnav a:hover {
-    transition: background 0.3s;
-    background: #ddd;
+
+/* =========================================================
+   MOBILE RESPONSIVE DESIGN — small screens
+   ========================================================= */
+/* PURPOSE: convert horizontal nav into vertical stack for phones. 
+   HOW: switches flex direction, increases spacing, and removes absolute dropdowns. */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    background: #111;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav > li > a {
+    padding: 10px 15px;
+  }
+
+  .subnav {
+    position: static;                         /* stacks dropdowns inline */
+    box-shadow: none;
+  }
 }
