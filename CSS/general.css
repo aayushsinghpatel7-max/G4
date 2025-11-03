@@ -412,3 +412,120 @@ aside.warning { border-left-color: var(--accent); }
 }
 /* Figures look framed and cohesive across all pages.
    The subtle inner cyan glow connects them visually to the timeline cards. */
+
+   /* =========================================================
+   PAGE NAVIGATION BUTTONS — “Next Page / Previous Page”
+   ========================================================= */
+/* PURPOSE: lets users move between sections like progressing through game levels.  
+   HOW: glowing cyan buttons at the bottom of the page that align left/right;  
+        dynamically labeled (e.g., “Next Topic: 8-Bit Era”, “Previous Page”). */
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 10px 0;
+}
+
+/* Reuses .btn-neon base look but adds hover animation and spacing */
+.page-navigation a {
+  display: inline-block;
+  color: var(--neon);
+  border: 1px solid var(--neon);
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow:
+    0 0 10px rgba(0,224,255,0.25),
+    inset 0 0 10px rgba(0,224,255,0.1);
+}
+
+.page-navigation a:hover {
+  background: var(--neon);
+  color: #0b0f14;
+  box-shadow:
+    0 0 25px rgba(0,224,255,0.6),
+    0 0 35px rgba(0,224,255,0.3);
+  transform: scale(1.05);
+}
+
+/* Position fix for small screens — stack vertically */
+@media (max-width: 768px) {
+  .page-navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* =========================================================
+   DROPDOWN MENU — top-right “Quick Warp Menu”
+   ========================================================= */
+/* PURPOSE: adds a floating retro-style dropdown in the corner;  
+   acts like a game pause menu letting you warp between major topics.  
+   HOW: pure CSS hover system (no JS), cyan glowing frame, pixel edges feel. */
+
+.dropdown {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 1000;
+  text-align: left;
+}
+
+.dropdown-button {
+  background: none;
+  border: 1px solid var(--neon);
+  color: var(--neon);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:
+    0 0 16px rgba(0,224,255,0.25) inset,
+    0 0 12px rgba(0,224,255,0.15);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dropdown-button:hover {
+  background: var(--neon);
+  color: #0b0f14;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(15,16,20,0.98);
+  border: 1px solid var(--neon);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,224,255,0.25);
+  min-width: 220px;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.dropdown-content a {
+  display: block;
+  color: var(--text-main);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.dropdown-content a:hover {
+  background: var(--neon);
+  color: #0b0f14;
+  text-shadow: none;
+}
+
