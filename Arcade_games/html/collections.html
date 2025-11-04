@@ -2,28 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Preservation & Museum Collections</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="navigation.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
 
-     <!-- NAVBAR -->
-      <nav>
-        <div class="right">
-            <a href="keytitles.html" target="_self" rel="">
-                <span>keytitles</span>
-            </a>
-            <a href="developers.html" target="_self" rel="">
-                <span>developers</span>
-            </a>
-            <a href="collections.html" target="_self" rel="">
-                <span>collections</span>
-            </a>
-            <a href="classics.html" target="_self" rel="">
-                <span>classics</span>
-            </a>
-        </div>
-      </nav>
-    
+<!-- navigation -->
+<nav>
+  <ul class="nav">
+    <li>
+        <a href="keytitles.html">Key Titles</a>
+    </li>
+    <li>
+        <a href="developers.html">Developers</a>
+    </li>
+     <li>
+        <a href="classics.html">Classics</a>
+    </li>
+    <li>
+        <a class="active" href="collections.html">Collections</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- page-title -->
+<div class="box">
+  <h1>Preservation & Museum Collections</h1>
+</div>
+
+<!-- timeline-sections -->
+<div class="timeline">
+
+  <div class="timeline-item" id="emulation">
+    <h2>Emulation as Documentation</h2>
+    <p class="content">
+      Projects like MAME preserve hardware behavior and
+      software for study and access. Beyond playability,
+      accurate emulation documents how systems worked
+      and how games felt to use.
+      <a href="https://docs.mamedev.org/whatis.html?utm_source=chatgpt.com" 
+         target="_blank">(MAME)</a>
+    </p>
+  </div>
+
+  <div class="timeline-item" id="playable-archives">
+    <h2>Playable Archives in the Browser</h2>
+    <p class="content">
+      Collections such as the Internet Archive's Internet 
+      Arcade bring hundreds of classic titles to the public
+      through browser-based emulation, broadening access 
+      while highlighting preservation challenges.
+      <a href="https://archive.org/details/internetarcade?utm_source=chatgpt.com" 
+         target="_blank">(online-archives)</a>
+    </p>
+  </div>
+
+  <div class="timeline-item" id="museums">
+    <h2>Museums & Public Memory</h2>
+    <p class="content">
+      Institutions like The Strong's World Video Game Hall of 
+      Fame keep public awareness alive with curated
+      selections, original cabinets, and interactive 
+      narratives that contextualize arcade history.
+      <a href="https://www.museumofplay.org/exhibits/world-video-game-hall-of-fame/inducted-games/?utm_source=chatgpt.com"
+         target="_blank">(museums)</a>
+    </p>
+
+    <div class="figure-content">
+      <figure>
+        <a href="https://www.travelagewest.com/Travel/USA-Canada/8-Best-Arcades-and-Game-Museums-in-the-U-S-" target="_blank">
+          <img src="img/americanmuseum2025.jpg" alt="American Museum" width="200" height="200">
+        </a>
+        <figcaption>figure 1: American Museum</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.museumofplay.org/exhibits/museum-exhibits/" target="_blank">
+          <img src="img/strongnationalmuseum.jpeg" alt="Strong Museum" width="200" height="200">
+        </a>
+        <figcaption>figure 2: Strong Museum</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.oregonlive.com/living/2023/03/this-oregon-arcade-has-been-named-worlds-best-place-for-pinball.html" target="_blank">
+          <img src="img/oregonmuseum.avif" width="200" height="200" alt="oregonmuseum">
+        </a>
+        <figcaption>figure 3: Oregon Museum</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.worldrecordacademy.org/2024/3/worlds-largest-classic-arcade-museum-world-record-in-laconia-new-hampshire-424194" target="_blank">
+          <img src="img/newhampshireclassicmuseum.webp" width="200" height="200" alt="newhampshireclassicmuseum">
+        </a>
+        <figcaption>figure 4: World's Largest Classic Arcade Museum</figcaption>
+      </figure>
+    </div>
+  </div>
+
+</div>
+
+    <footer>
+        History of Video Games — Group Assignment, Software Atelier 1.
+    </footer>
+
 </body>
 </html>
