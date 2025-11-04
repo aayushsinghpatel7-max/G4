@@ -44,8 +44,8 @@ body::before {
   text-align: center;
   animation: autoRoll 60s linear infinite;
 }
-.credits-viewport:hover .credits-container {
-  animation-play-state: paused;  /* user control */
+.credits-container {
+  animation: autoRoll 60s linear forwards; /* instead of infinite */
 }
 
 @keyframes autoRoll {
