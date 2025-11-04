@@ -1,37 +1,18 @@
-/* =========================================================
-   CREDITS PAGE — retro game outro
-   ========================================================= */
-/* PURPOSE: Simulates the end credits of a classic video game.
-   The goal is to make it feel like the player has “finished the game.”
-   HOW: uses a dark gradient background, subtle stars, and glowing white text
-   that scrolls upward over time while remaining scrollable manually.
-*/
-
-/* === PAGE BACKGROUND === */
+/* === PAGE BASE === */
 body {
   margin: 0;
-  height: 100vh;
-  overflow-y: scroll; /* keeps manual scroll enabled */
+  min-height: 100vh;            /* keep page tall, not fixed */
+  overflow-y: auto;              /* allow scrolling both ways */
   background: radial-gradient(circle at center, #0a0a0f 0%, #000 80%);
   font-family: 'Courier New', monospace;
   color: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  perspective: 800px; /* adds subtle depth for text */
 }
 
 /* === STARFIELD BACKGROUND === */
-/* PURPOSE: Adds faint moving stars to create a sense of space and motion.
-   HOW: by repeating radial gradient + animation shifts background position slowly. */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background:
     radial-gradient(2px 2px at 10px 10px, #00e0ff, transparent 40%),
     radial-gradient(1px 1px at 50px 80px, #fff, transparent 40%),
@@ -44,27 +25,35 @@ body::before {
 }
 @keyframes starsMove {
   from { background-position: 0 0; }
-  to { background-position: -400px 800px; }
+  to   { background-position: -400px 800px; }
 }
 
-/* === CREDITS CONTAINER === */
-/* PURPOSE: Holds all the credit lines and animates them slowly upward.
-   HOW: flex column + infinite loop scroll. Also allows manual scroll for review. */
+/* === SCROLL VIEWPORT ===
+   Adds space above/below so scrollbar always stays available */
+.credits-viewport {
+  width: 100%;
+  padding: 40vh 0;               /* big top/bottom breathing room */
+}
+
+/* === AUTO-SCROLLING ROLLER ===
+   Faster, and pauses on hover so users can scroll back up */
 .credits-container {
   width: 90%;
   max-width: 900px;
-  text-align: center;
   margin: 0 auto;
-  animation: slowScroll 120s linear infinite;
+  text-align: center;
+  animation: autoRoll 60s linear infinite;
 }
-@keyframes slowScroll {
-  from { transform: translateY(50vh); }
+.credits-viewport:hover .credits-container {
+  animation-play-state: paused;  /* user control */
+}
+
+@keyframes autoRoll {
+  from { transform: translateY(30vh); }
   to   { transform: translateY(-250%); }
 }
 
-/* === INDIVIDUAL CREDIT LINES === */
-/* PURPOSE: Display contributor names and roles with glowing readability.
-   HOW: use white text + cyan/pink glow depending on importance. */
+/* === CREDIT LINES === */
 .credit-title {
   font-size: 2rem;
   color: #00e0ff;
@@ -72,27 +61,26 @@ body::before {
   margin-bottom: 2rem;
   letter-spacing: 2px;
 }
-
 .credit-section {
   margin: 1.5rem 0;
   font-size: 1.2rem;
   color: #e0e0e0;
   text-shadow: 0 0 8px rgba(255,255,255,0.4);
 }
-
 .credit-role {
   color: #df5460;
   text-shadow: 0 0 10px #df5460;
   font-weight: bold;
 }
-
 .credit-name {
   color: #eaeaea;
-  font-weight: normal;
   text-shadow: 0 0 8px rgba(255,255,255,0.4);
 }
-
-/* === SPECIAL THANKS SECTION === */
+.credit-name:hover {
+  color: #00e0ff;
+  text-shadow: 0 0 15px #00e0ff;
+  transition: all 0.3s ease;
+}
 .special-thanks {
   margin-top: 3rem;
   color: #00e0ff;
@@ -100,37 +88,82 @@ body::before {
   text-shadow: 0 0 10px #00e0ff;
 }
 
-/* === END MESSAGE === */
-/* PURPOSE: Final message simulates a game over or restart screen.  
-   HOW: centered large text that pulses subtly to look like old CRT text. */
+/* === GAME OVER / RESTART === */
+.end-container {
+  margin-top: 8rem;
+  text-align: center;
+}
 .end-message {
-  margin-top: 5rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #df5460;
-  text-shadow: 0 0 20px #df5460, 0 0 40px rgba(223,84,96,0.5);
+  text-shadow: 0 0 25px #df5460, 0 0 50px rgba(223,84,96,0.7);
   animation: pulseText 1.5s infinite alternate;
 }
 @keyframes pulseText {
   from { opacity: 0.6; text-shadow: 0 0 10px #df5460; }
-  to { opacity: 1; text-shadow: 0 0 25px #df5460, 0 0 50px rgba(223,84,96,0.8); }
+  to   { opacity: 1; text-shadow: 0 0 25px #df5460, 0 0 50px rgba(223,84,96,0.8); }
 }
-
-/* === OPTIONAL HOVER EFFECTS === */
-/* Adds interactivity if users hover over names (just for fun). */
-.credit-name:hover {
+.end-sub {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #eaeaea;
+}
+.end-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.end-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid #00e0ff;
   color: #00e0ff;
-  text-shadow: 0 0 15px #00e0ff;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
+  box-shadow:
+    0 0 15px rgba(0,224,255,0.25),
+    inset 0 0 15px rgba(0,224,255,0.15);
+}
+.end-btn:hover {
+  background: #00e0ff;
+  color: #0b0f14;
+  box-shadow:
+    0 0 25px rgba(0,224,255,0.6),
+    0 0 35px rgba(0,224,255,0.3);
+  transform: scale(1.05);
 }
 
-/* === SCROLLBAR STYLING (optional polish) === */
-::-webkit-scrollbar {
-  width: 10px;
+/* === GOODBYE LOGIC (CSS-only) === */
+.goodbye-toggle { display: none; }   /* the checkbox */
+.goodbye-screen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  color: #00e0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 0 0 20px #00e0ff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease;
+  z-index: 999;
 }
+.goodbye-toggle:checked ~ .goodbye-screen {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* === SCROLLBAR (polish) === */
+::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(#00e0ff, #df5460);
   border-radius: 10px;
 }
-::-webkit-scrollbar-track {
-  background: #111;
-}
+::-webkit-scrollbar-track { background: #111; }
