@@ -529,3 +529,122 @@ aside.warning { border-left-color: var(--accent); }
   text-shadow: none;
 }
 
+/* creating textbox, picture, etc options for others to use in their pages */ 
+
+
+/* TEXTBOXES - format: class="textbox left/center/right" */
+.textbox {
+  display: block;
+  max-width: 480px;
+  width: 90%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.textbox.left {
+  margin: 20px auto 20px 0;
+  text-align: left;
+}
+.textbox.center {
+  margin: 20px auto;
+  text-align: center;
+}
+.textbox.right {
+  margin: 20px 0 20px auto;
+  text-align: right;
+}
+.textbox.inline {
+  display: inline-block;
+  width: 30%;
+  max-width: 33%;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin: 12px 1%;
+}
+
+/* PICTURES: format: class="picture left/center/right square/circle/rounded" */
+.picture {
+  display: block;
+  max-width: 300px;
+  width: 90%;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.picture.left {
+  margin: 20px auto 20px 0;
+  float: left;
+}
+.picture.center {
+  clear: both;
+  margin: 20px auto;
+}
+.picture.right {
+  margin: 20px 0 20px auto;
+  float: right;
+}
+.picture.square {
+  border-radius: 0;
+}
+.picture.rounded {
+  border-radius: 12px;
+}
+.picture.circle {
+  border-radius: 50%;
+}
+.picture.inline {
+  display: inline-block;
+  width: 30%;
+  max-width: 300px;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin: 12px 1%;
+}
+
+/* -------- flex row option (better control) -------- */
+/* wrap three items in <div class="row">...</div> */
+.row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row .textbox,
+.row .picture {
+  flex: 1 1 30%;
+  max-width: 33%;
+  margin: 8px 0;
+}
+
+/* -------- media object (text flows beside image) -------- */
+/* HTML: <div class="media"><img class="picture left" ...><div class="media-body">long text...</div></div> */
+.media {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+.media .picture {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 220px; /* change to suit */
+  margin: 0;
+}
+.media .media-body {
+  flex: 1 1 auto;
+  min-width: 0; /* allows text overflow */
+}
+
+/* -------- border classes -------- */
+.border-red {
+  border: 2px solid #df5460; 
+}
+.border-neon { 
+  border: 2px solid var(--neon); 
+}
+.border-light { 
+  border: 1px solid rgba(255,255,255,0.12); 
+}
+.border-accent { 
+  border: 2px solid var(--accent) !important; 
+}
+
+/* use like: <div class="textbox left border-red"> or <img class="picture right border-neon"> */
