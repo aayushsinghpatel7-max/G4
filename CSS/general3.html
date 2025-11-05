@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Holovatyi Markiian">
+
     <!--==========================================================
         PROJECT: History of Video Games 
         ==========================================================
@@ -11,10 +11,10 @@
     -->
 
     <!-- Link to main general styles (layout, timeline, colors) -->
-    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="general.css">
 
     <!-- Link to navigation bar styles (menu, hover, dropdowns) -->
-    <link rel="stylesheet" href="../CSS/navigation.css">
+    <link rel="stylesheet" href="navigation.css">
 
     <title>History of Video Games - Home</title>
 </head>
@@ -88,30 +88,31 @@
         </ul>
     </nav> 
 
-  <!-- HERO INTRO -->
-  <div class="box" style="max-width:1000px;">
-    <h1 class="glitch" data-text="The Gallery of Games">The Gallery of Games</h1>
-    <p>A glowing wall of interactive art — every frame a memory, every pixel a story.</p>
+
+  <!-- ALTERNATING SECTIONS -->
+  <div class="box" style="margin-top:60px;">
+    <h1 class="glitch" data-text="Power On">Power On</h1>
+    <p>The digital age began with the flicker of a CRT screen and a handful of polygons.</p>
   </div>
 
-  <!-- GALLERY GRID -->
-  <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;padding:40px;">
-    <figure class="figure">
-      <img src="image.png" alt="Atari Console">
-      <figcaption><em>Atari 2600</em> — The revolution of home gaming.</figcaption>
-    </figure>
-    <figure class="figure">
-      <img src="image.png" alt="GameBoy">
-      <figcaption><em>GameBoy</em> — Gaming on the go.</figcaption>
-    </figure>
-    <figure class="figure">
-      <img src="image.png" alt="Sega">
-      <figcaption><em>Sega Mega Drive</em> — Sonic speed meets hardware power.</figcaption>
-    </figure>
-    <figure class="figure">
-      <img src="image.png" alt="PlayStation">
-      <figcaption><em>PlayStation 2</em> — The most iconic home console of all time.</figcaption>
-    </figure>
+  <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;padding:40px;">
+    <div style="flex:1;min-width:300px;">
+      <img src="image.png" style="width:100%;border-radius:20px;">
+    </div>
+    <div style="flex:1;min-width:300px;">
+      <h2>Arcades: The First Arenas</h2>
+      <p>Neon lights reflected off metal cabinets, each game humming like an engine of joy. Arcades were the original online communities — physical spaces of play.</p>
+    </div>
+  </section>
+
+  <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;flex-direction:row-reverse;padding:40px;">
+    <div style="flex:1;min-width:300px;">
+      <img src="image.png" style="width:100%;border-radius:20px;">
+    </div>
+    <div style="flex:1;min-width:300px;">
+      <h2>The Home Console Era</h2>
+      <p>From living rooms to bedrooms, gaming became personal. Entire worlds fit inside grey cartridges, and the joystick gave way to the D-pad.</p>
+    </div>
   </section>
 
   <footer>History of Video Games — Group Assignment, Software Atelier 1.</footer>
