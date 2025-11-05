@@ -231,6 +231,8 @@ nav {
   border-radius: 12px;                     /* same curve as surrounding panels */
   padding: 10px 20px;
   margin: 0 auto 25px auto;                /* keep it centered under title */
+  margin-top: -20px;
+  margin-bottom: 50px;
   width: fit-content;
   box-shadow: 0 0 15px rgba(0, 224, 255, 0.2);
 }
