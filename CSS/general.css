@@ -19,6 +19,7 @@
   --neon: #00e0ff;
   --accent: #df5460;
   --border: #526b80;
+  --sidenav-width: 220px; /* width used by the side navigation */
 }
 
 /* =========================================================
@@ -644,7 +645,6 @@ aside.warning { border-left-color: var(--accent); }
   border: 1px solid rgba(255,255,255,0.12); 
 }
 .border-accent { 
-  border: 2px solid var(--accent) !important; 
+  border: 2px solid var(--accent); 
 }
-
 /* use like: <div class="textbox left border-red"> or <img class="picture right border-neon"> */
