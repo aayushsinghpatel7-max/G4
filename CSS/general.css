@@ -41,6 +41,11 @@ body {
   margin-top: 100px;
 }
 
+html, body {
+  overscroll-behavior: none;
+  height: 100% ;
+}
+
 /* =========================================================
    3D BOXES — give pages depth and arcade panel feel
    ========================================================= */
