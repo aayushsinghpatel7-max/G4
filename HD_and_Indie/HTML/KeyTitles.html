@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta author="Matteo Di Fede">
+  <meta author="Michele Piu">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Key Titles</title>
-  <style type="text/css"> </style>
+  <link rel="stylesheet" href="../../CSS/general.css">
+  <link rel="stylesheet" href="../../CSS/navigation.css">
 </head>
 <body>
+
+    <!-- =========================================================
+         NAVIGATION BAR
+         =========================================================
+    -->
+    <nav>
+        <ul class="nav">
+            <li><a href="./general.html">Home</a></li>
+            <li><a href="./era1.html">Arcade Games</a><!-- subnav here --></li>
+            <li><a href="./era2.html">8 Bit and 16 Bit Games</a><!-- subnav here --></li>
+            <li><a href="./era3.html">Home Consoles</a><!-- subnav here --></li>
+            <li><a href="./era4.html">3D Games</a><!-- subnav here --></li>
+            
+            <li>
+                <!-- This is the active section -->
+                <a href="./era5.html" id="currentsection">HD and Indie Games</a>
+                <ul class="subnav">
+                    <!-- Updated with all pages in this section -->
+                    <li><a href="./digital_distribution.html">Digital Distribution</a></li>
+                    <li><a href="./indie_renaissance.html">Indie Renaissance</a></li>
+                    <li><a href="./key_titles.html">Key Titles</a></li>
+                    <li><a href="./indie_pioneers.html">The Pioneers</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="./era6.html">Modern Games</a><!-- subnav here --></li>
+            <li><a href="./credits.html">Credits</a></li>
+        </ul>
+    </nav>
+
+    <!-- =========================================================
+         MAIN CONTENT SECTION
+         =========================================================
+         Using .timeline-item styles to create a "card" for each game.
+    -->
+    <div class="box">
+        
+        <!-- Using the .glitch effect from general.css for the title -->
+        <h1 class="glitch" data-text="Key Indie Titles">Key Indie Titles</h1>
+        
+        <p>
+            The indie boom wasn't just a business shift; it was a creative explosion. A handful of key titles broke through the noise, capturing critical acclaim and proving that small teams could create powerful, industry-changing experiences.
+        </p>
+        
+        <!-- 
+            Here, we re-purpose the .timeline class not for chronology,
+            but as a container for our "Hall of Fame" cards.
+        -->
+        <div class="timeline" style="padding-top: 20px;">
+            
+            <!-- Card 1: Braid -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Braid (2008)</h3>
+                    <p>
+                        On the surface, a beautiful, painterly platformer. Beneath, a complex puzzle game built around time manipulation. Its cryptic story and philosophical themes challenged the idea of what a "game story" could be.
+                    </p>
+                    <aside class="note" style="margin: 10px 0 0 0;">
+                        <strong>Influence:</strong> Popularized the "indie-as-art" movement and proved that a small game could command a premium price on consoles.
+                    </aside>
+                </div>
+            </div>
+
+            <!-- Card 2: Limbo -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Limbo (2010)</h3>
+                    <p>
+                        A masterpiece of minimalist design. With no text, no tutorial, and a stark black-and-white silhouette aesthetic, *Limbo* created a world of unbearable tension and haunting beauty.
+                    </p>
+                    <aside class="note" style="margin: 10px 0 0 0;">
+                        <strong>Influence:</strong> Its "trial-and-death" gameplay and atmospheric storytelling inspired a wave of cinematic, art-driven platformers.
+                    </aside>
+                </div>
+            </div>
+
+            <!-- Card 3: Journey -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Journey (2012)</h3>
+                    <p>
+                        A wordless adventure where players anonymously meet and help each other on a pilgrimage. *Journey* focused on creating a purely emotional, collaborative experience, often leaving players in tears.
+                    </p>
+                    <aside class="note" style="margin: 10px 0 0 0;">
+                        <strong>Influence:</strong> Redefined multiplayer, proving it could be about connection and kindness, not just competition.
+                    </aside>
+                </div>
+            </div>
+
+            <!-- Card 4: Shovel Knight -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Shovel Knight (2014)</h3>
+                    <p>
+                        A love letter to the 8-bit era, funded by Kickstarter. It wasn't just a copy; it was a *modern* take on retro design, learning all the right lessons from classics like *Mega Man* and *DuckTales*.
+                    </p>
+                    <aside class="note" style="margin: 10px 0 0 0;">
+                        <strong>Influence:</strong> Became the gold standard for "retro-revival" games and proved the power of crowdfunding to build a passionate community.
+                    </aside>
+                </div>
+            </div>
+            
+        </div> <!-- end .timeline -->
+
+        <hr style="border-color: var(--border); margin: 40px auto; width: 50%;">
+        
+        <!-- Internal "call to action" button -->
+        <h2 class="glitch ">But who made these games?</h2>
+        <p>These titles were crafted by small, visionary teams and individuals who changed gaming forever.</p>
+        <a href="Pioneers.html" class="btn-neon" style="margin-top: 10px;">Meet the Pioneers</a>
+
+    </div> <!-- end .box -->
+
+
+    <!-- =========================================================
+         PAGE NAVIGATION
+         =========================================================
+    -->
+    <div class="page-navigation">
+        <a href="IndieRenaissence.html">‹‹ Back: Indie Renaissance</a>
+        <a href="Pioneers.html">Next: The Pioneers ››</a>
+    </div>
+
+    <!-- =========================================================
+         FOOTER
+         =========================================================
+    -->
+    <footer>
+        History of Video Games — Group Assignment, Software Atelier 1.
+    </footer>
 </body>
 </html>

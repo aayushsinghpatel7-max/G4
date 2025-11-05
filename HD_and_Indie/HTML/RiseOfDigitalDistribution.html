@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta author="Matteo Di Fede">
+  <meta author="Michele Piu">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Rise of Digital Distribution </title>
-  <style type="text/css"> </style>
+  <link rel="stylesheet" href="../../CSS/general.css">
+   <link rel="stylesheet" href="../../CSS/navigation.css">
 </head>
 <body>
+
+    <!-- =========================================================
+         NAVIGATION BAR
+         =========================================================
+         PURPOSE: Provides links to each era page + current section indicator.
+         Controlled by navigation.css.
+    -->
+    <nav>
+        <ul class="nav">
+            <!-- "currentsection" is removed from Home -->
+            <li><a href="./general.html">Home</a></li>
+
+            <li>
+                <a href="./era1.html">Arcade Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Section 1</a></li>
+                    <li><a href="./section2.html">Section 2</a></li>
+                    <li><a href="./section3.html">Section 3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./era2.html">8 Bit and 16 Bit Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Section 1</a></li>
+                    <li><a href="./section2.html">Section 2</a></li>
+                    <li><a href="./section3.html">Section 3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./era3.html">Home Consoles</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Intro 3D gaming</a></li>
+                    <li><a href="./section2.html">Atari 2600</a></li>
+                    <!-- ... other links ... -->
+                </ul>
+            </li>
+
+            <li>
+                <a href="./era4.html">3D Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Section 1</a></li>
+                    <li><a href="./section2.html">Section 2</a></li>
+                    <li><a href="./section3.html">Section 3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <!-- This is now the active section -->
+                <a href="./era5.html" id="currentsection">HD and Indie Games</a>
+                <ul class="subnav">
+                    <!-- Links to our new pages -->
+                    <li><a href="./digital_distribution.html">Digital Distribution</a></li>
+                    <li><a href="./indie_renaissance.html">Indie Renaissance</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./era6.html">Modern Games</a>
+                <ul classs="subnav">
+                    <li><a href="./section1.html">Section 1</a></li>
+                    <li><a href="./section2.html">Section 2</a></li>
+                    <li><a href="./section3.html">Section 3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./credits.html">Credits</a></li>
+        </ul>
+    </nav>
+
+    <!-- =========================================================
+         MAIN CONTENT SECTION
+         =========================================================
+         PURPOSE: Contains the detailed content for this specific topic.
+         Uses the .box class from general.css for styling.
+    -->
+    <div class="box">
+        <!-- Main title for the page -->
+        <h1>The Rise of Digital Distribution</h1>
+        
+        <!-- Wrapper div to activate .content list styles from general.css -->
+        <div class="content">
+            <p>
+                Before the mid-2000s, launching a video game was a monumental task. Developers had to secure a publisher, who would then handle the expensive and complex logistics of manufacturing physical discs or cartridges, printing boxes, and shipping them to retail stores around the world. These "gatekeepers" held all the power, and shelf space at stores like GameStop or Walmart was limited and expensive.
+            </p>
+            <p>
+                This system made it nearly impossible for small, independent developers with creative but niche ideas to ever get their games in front of players.
+            </p>
+
+            <!-- A figure using the styles from general.css -->
+            <div class="figure">
+                <img src="https://placehold.co/800x400/1a1f26/eaeaea?text=Physical+Media+vs+Digital+Download" alt="Placeholder image showing physical game boxes next to a download icon">
+                <figcaption>
+                    The shift from physical boxes to direct downloads revolutionized the industry.
+                </figcaption>
+            </div>
+
+            <h2>A New Gateway: Steam</h2>
+            <p>
+                Launched by Valve Corporation in 2003, Steam began as a simple tool to update their own games like *Counter-Strike*. However, it quickly evolved into a full-fledged digital storefront for PC gaming. This was a revolution for several reasons:
+            </p>
+            <ul>
+                <li><strong>No Manufacturing Costs:</strong> Games were just data. Developers didn't need to print a single disc.</li>
+                <li><strong>Infinite Shelf Space:</strong> A digital store can host thousands of games, from AAA blockbusters to tiny one-person projects.</li>
+                <li><strong>Direct Access:</strong> Developers could publish updates and patches instantly without a publisher's approval.</li>
+                <li><strong>Global Reach:</strong> A developer in Sweden could sell their game to someone in Japan with the click of a button.</li>
+            </ul>
+            <p>
+                Platforms like Steam, and later GOG.com, dismantled the old gatekeeper system on PC. For the first time, small teams could build a game, publish it themselves, and find a global audience, paving the way for the "indie boom."
+            </p>
+
+            <!-- A note using the .aside .note style from general.css -->
+            <aside class="note">
+                While Steam opened the doors, it soon created a new problem: discoverability. With thousands of new games releasing every year, just getting noticed in the digital crowd became (and remains) a major challenge for developers.
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- =========================================================
+         PAGE NAVIGATION
+         =========================================================
+         PURPOSE: Links to the next and previous relevant pages.
+         Uses the .page-navigation class from general.css.
+    -->
+    <div class="page-navigation">
+        <!-- Link to the main hub page -->
+        <a href="general.html">‹‹ Back to Home</a>
+        
+        <!-- Link to the next page in this series -->
+        <a href="indie_renaissance.html">Next: The Indie Renaissance ››</a>
+    </div>
+
+    <!-- =========================================================
+         FOOTER
+         =========================================================
+         PURPOSE: Displays project info consistently across all pages.
+    -->
+    <footer>
+        History of Video Games — Group Assignment, Software Atelier 1.
+    </footer>
+
 </body>
 </html>
