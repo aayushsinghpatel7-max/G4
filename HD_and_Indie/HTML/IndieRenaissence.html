@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta author="Matteo Di Fede">
+  <meta author="Michele Piu">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Indie Renaissence</title>
-  <style type="text/css"> </style>
+  <title> Indie Renaissance</title>
+  <link rel="stylesheet" href="../../CSS/general.css">
+  <link rel="stylesheet" href="../../CSS/navigation.css">
 </head>
 <body>
+
+    <!-- =========================================================
+         NAVIGATION BAR
+         =========================================================
+         PURPOSE: Provides links to each era page + current section indicator.
+         Controlled by navigation.css.
+    -->
+    <nav>
+        <ul class="nav">
+            <!-- "currentsection" is removed from Home -->
+            <li><a href="./general.html">Home</a></li>
+
+            <li>
+                <a href="./era1.html">Arcade Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Section 1</a></li>
+                    <li><a href="./section2.html">Section 2</a></li>
+                    <li><a href="./section3.html">Section 3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./era2.html">8 Bit and 16 Bit Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Section 1</a></li>
+                    <li><a href="./section2.html">Section 2</a></li>
+                    <li><a href="./section3.html">Section 3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./era3.html">Home Consoles</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Intro 3D gaming</a></li>
+                    <li><a href="./section2.html">Atari 2600</a></li>
+                    <!-- ... other links ... -->
+                </ul>
+            </li>
+
+            <li>
+                <a href="./era4.html">3D Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Section 1</a></li>
+                    <li><a href="./section2.html">Section 2</a></li>
+                    <li><a href="./section3.html">Section 3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <!-- This is now the active section -->
+                <a href="./IndieRenaissence.html" id="currentsection">HD and Indie Games</a>
+                <ul class="subnav">
+                    <!-- Links to our new pages -->
+                    <li><a href="./RiseOfDigitalDistribution.html">Digital Distribution</a></li>
+                    <li><a href="./IndieRenaissence.html">Indie Renaissance</a></li>
+                    <li><a href="./Pioneers.html">Pioneers</a></li>
+                    <li><a href="./KeyTitles.html">Key Titles</a></li>  
+                    <li><a href="./MobileGame.html">Mobile Games</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./era6.html">Modern Games</a>
+                <ul classs="subnav">
+                </ul>
+            </li>
+
+            <li><a href="./credits.html">Credits</a></li>
+        </ul>
+    </nav>
+
+    <!-- =========================================================
+         MAIN CONTENT SECTION
+         =========================================================
+         PURPOSE: Contains the detailed content for this specific topic.
+         Uses the .box class from general.css for styling.
+    -->
+    <div class="box">
+        <!-- Main title for the page -->
+        <h1 class="glitch">The Indie Renaissance</h1>
+        
+        <!-- Wrapper div to activate .content list styles from general.css -->
+        <div class="content">
+            <p>
+                While Steam opened the floodgates on PC, the "Indie Boom" truly became a cultural phenomenon when consoles joined the revolution. For the first time, small, downloadable games weren't just side content; they were system-selling exclusives that defined a console generation.
+            </p>
+
+            <h2>Xbox Live Arcade (XBLA)</h2>
+            <p>
+                Microsoft's Xbox 360 (launched in 2005) was the key player with its heavily promoted Xbox Live Arcade. This curated digital storefront gave small, high-quality indie games a primetime spot on the console dashboard, right next to $60 blockbuster titles.
+            </p>
+            <p>
+                This visibility was transformative. Games developed by tiny teams became massive, mainstream hits:
+            </p>
+            <ul>
+                <li><strong>Braid (2008):</strong> A time-bending puzzle-platformer that was hailed as a work of art and proved indie games could be profound.</li>
+                <li><strong>Castle Crashers (2008):</strong> A hilarious 4-player beat-'em-up that became one of the best-selling XBLA titles of all time.</li>
+                <li><strong>LIMBO (2010):</strong> A haunting, black-and-white platformer that showcased the power of atmosphere and minimalist design.</li>
+                <li><strong>Super Meat Boy (2010):</strong> A brutally difficult, precision-platformer that celebrated hardcore gameplay.</li>
+            </ul>
+
+            <!-- A figure using the styles from general.css -->
+            <div class="figure">
+                <img src="https://placehold.co/800x400/1a1f26/eaeaea?text=Key+Indie+Games+(Braid,+LIMBO,+Journey)" alt="Placeholder showing key indie game art styles">
+                <figcaption>
+                    Titles like <em>Braid</em>, <em>LIMBO</em>, and <em>Journey</em> (on PSN) proved that small teams could create powerful artistic statements.
+                </figcaption>
+            </div>
+
+            <h2>PlayStation Store (PSN) and Beyond</h2>
+            <p>
+                Sony quickly followed suit, using its PlayStation Store (PSN) on the PlayStation 3 to champion its own wave of artistic indie titles. Sony actively courted unique, experimental games, leading to critically acclaimed hits like:
+            </p>
+            <ul>
+                <li><strong>flOw (2006):</strong> A simple, zen-like game about a microorganism evolving.</li>
+                <li><strong>Flower (2009):</strong> A beautiful, meditative game where you control the wind guiding flower petals.</li>
+                <li><strong>Journey (2012):</strong> A wordless, anonymous online co-op adventure that many consider one of the greatest games ever made.</li>
+            </ul>
+            <p>
+                This "indie renaissance" fundamentally changed gaming. It democratized development, introduced countless new genres and artistic styles, and proved to the world that a game's value wasn't measured by its budget, but by its creativity and heart.
+            </p>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         PAGE NAVIGATION
+         =========================================================
+         PURPOSE: Links to the next and previous relevant pages.
+         Uses the .page-navigation class from general.css.
+    -->
+    <div class="page-navigation">
+        <!-- Link to the previous page in this series -->
+        <a href="digital_distribution.html">‹‹ Back: Digital Distribution</a>
+        
+        <!-- Link to the main hub page -->
+        <a href="general.html">Return to Home ››</a>
+    </div>
+
+    <!-- =========================================================
+         FOOTER
+         =========================================================
+         PURPOSE: Displays project info consistently across all pages.
+    -->
+    <footer>
+        History of Video Games — Group Assignment, Software Atelier 1.
+    </footer>
+
 </body>
 </html>

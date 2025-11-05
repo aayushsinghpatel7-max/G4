@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta author="Matteo Di Fede">
+  <meta author="Michele Piu">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Pioneers</title>
-  <style type="text/css"> </style>
+  <link rel="stylesheet" href="../../CSS/general.css">
+  <link rel="stylesheet" href="../../CSS/navigation.css">
 </head>
+
 <body>
+
+    <!-- =========================================================
+         NAVIGATION BAR
+         =========================================================
+    -->
+    <nav>
+        <ul class="nav">
+            <li><a href="./general.html">Home</a></li>
+            <li><a href="./era1.html">Arcade Games</a><!-- subnav here --></li>
+            <li><a href="./era2.html">8 Bit and 16 Bit Games</a><!-- subnav here --></li>
+            <li><a href="./era3.html">Home Consoles</a><!-- subnav here --></li>
+            <li><a href="./era4.html">3D Games</a><!-- subnav here --></li>
+            
+            <li>
+                <!-- This is the active section -->
+                <a href="./era5.html" id="currentsection">HD and Indie Games</a>
+                <ul class="subnav">
+                    <!-- Updated with all pages in this section -->
+                    <li><a href="./digital_distribution.html">Digital Distribution</a></li>
+                    <li><a href="./indie_renaissance.html">Indie Renaissance</a></li>
+                    <li><a href="./key_titles.html">Key Titles</a></li>
+                    <li><a href="./indie_pioneers.html">The Pioneers</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="./era6.html">Modern Games</a><!-- subnav here --></li>
+            <li><a href="./credits.html">Credits</a></li>
+        </ul>
+    </nav>
+
+    <!-- =========================================================
+         MAIN CONTENT SECTION
+         =========================================================
+         Using .image-overlay for more interactive visuals.
+    -->
+    <div class="box">
+        
+        <!-- Using the .glitch effect from general.css for the title -->
+        <h1 class="glitch" data-text="Indie Pioneers">Indie Pioneers</h1>
+        
+        <p>
+            Behind every groundbreaking game is a creator who dared to defy convention. These individuals and small teams championed artistic vision and personal expression, inspiring millions and proving that success didn't require a billion-dollar budget.
+        </p>
+
+        <!-- Wrapper div to activate .content list styles from general.css -->
+        <div class="content">
+
+            <h2>The World-Builder: Markus "Notch" Persson</h2>
+            <p>
+                The creator of *Minecraft* (2011), "Notch" changed gaming not with a story, but with a tool. He gave players a simple, infinite sandbox of blocks and let their own creativity do the rest. *Minecraft* became a global cultural phenomenon, demonstrating the power of emergent gameplay and community-driven content.
+            </p>
+            
+            <!-- Using .image-overlay from general.css for a hover-zoom effect -->
+            <div class="image-overlay" style="max-width: 800px; margin: 20px auto;" data-caption="Minecraft's simple blocks created limitless possibilities.">
+                <img src="https://placehold.co/800x450/1a1f26/eaeaea?text=Minecraft+World" alt="Placeholder image of a Minecraft landscape">
+            </div>
+
+            <aside class="warning" style="text-align: left; margin: 25px auto;">
+                <strong>AAA Influence:</strong> The massive success of *Minecraft* forced the entire AAA industry to take notice. Its survival-crafting mechanics were soon adopted by hundreds of other games, creating an entirely new genre.
+            </aside>
+
+            <hr style="border-color: var(--border); margin: 40px auto; width: 50%;">
+
+            <h2>The Philosopher: Jonathan Blow</h2>
+            <p>
+                As the designer of *Braid*, Jonathan Blow was one of the first "faces" of the indie movement. He was outspoken about his desire to create "games for adults"—not in the sense of violence, but in thematic and intellectual complexity. He treated games as a serious art form capable of exploring profound ideas.
+            </p>
+
+            <div class="image-overlay" style="max-width: 800px; margin: 20px auto;" data-caption="Braid's time-bending mechanics were tied directly to its story.">
+                <img src="https://placehold.co/800x450/1a1f26/eaeaea?text=Braid+Artwork" alt="Placeholder image showing Braid's painterly art style">
+            </div>
+            
+            <hr style="border-color: var(--border); margin: 40px auto; width: 50%;">
+
+            <h2>The Artists: thatgamecompany</h2>
+            <p>
+                Co-founded by Jenova Chen and Kellee Santiago, thatgamecompany (TGC) built their reputation on the PlayStation Network. Their design philosophy was, and is, radically different: they focus on evoking emotions, not just testing skills.
+            </p>
+            <ul>
+                <li><strong>flOw (2006):</strong> A zen-like game of consumption and evolution.</li>
+                <li><strong>Flower (2009):</strong> A "poem" about controlling the wind to spread life.</li>
+                <li><strong>Journey (2012):</strong> Their masterpiece of anonymous, emotional connection.</li>
+            </ul>
+            <p>
+                TGC's work proved that games could be meditative, beautiful, and non-confrontational, influencing the rise of the "walking simulator" and other narrative-focused genres.
+            </p>
+
+        </div> <!-- end .content -->
+    </div> <!-- end .box -->
+
+
+    <!-- =========================================================
+         PAGE NAVIGATION
+         =========================================================
+    -->
+    <div class="page-navigation">
+        <a href="key_titles.html">‹‹ Back: Key Titles</a>
+        <a href="general.html">Return to Home ››</a>
+    </div>
+
+    <!-- =========================================================
+         FOOTER
+         =========================================================
+    -->
+    <footer>
+        History of Video Games — Group Assignment, Software Atelier 1.
+    </footer>
+
 </body>
 </html>
