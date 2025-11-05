@@ -216,3 +216,52 @@ nav {
   color: #00e0ff;
 }
 
+/* =========================================================
+   SUB-SUBTOPIC NAV BAR — inside content box
+   ========================================================= */
+/* PURPOSE: visually integrated mini-nav bar matching the cyan box borders */
+
+.subtopic-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: rgba(20, 25, 30, 0.9);      /* same tone as content box */
+  border: 2px solid #00e0ff;               /* same neon cyan border */
+  border-radius: 12px;                     /* same curve as surrounding panels */
+  padding: 10px 20px;
+  margin: 0 auto 25px auto;                /* keep it centered under title */
+  width: fit-content;
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.2);
+}
+
+/* Each link inside the mini-bar */
+.subtopic-nav a {
+  color: #e8eef5;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+  padding: 8px 10px;
+}
+
+/* Hover — same cyan glow */
+.subtopic-nav a:hover {
+  color: #00e0ff;
+  text-shadow: 0 0 6px #00e0ff;
+}
+
+/* Current page indicator — matches your red accent */
+.subtopic-nav a.active {
+  color: #df5460;
+  text-shadow: 0 0 8px rgba(223, 84, 96, 0.7);
+}
+
+/* Responsive tweak — stack vertically on narrow screens */
+@media (max-width: 768px) {
+  .subtopic-nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+}
