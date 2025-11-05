@@ -7,43 +7,51 @@
             <title>Test Textbox and Picture Styles</title>
     </head>
     <body>
-            <h1>Testing Textbox and Picture Styles</h1>
-            <section>
-                <div class="demo-note">Basic aligned textboxes using <code>class="textbox left|center|right"</code></div>
-                <div class="textbox left">This is a left-aligned textbox.</div>
-                <div class="textbox center">This is a centered textbox.</div>
-                <div class="textbox right">This is a right-aligned textbox.</div>
-            </section>
-            <section>
-                <div class="demo-note">Inline boxes: add <code>inline</code> to make them sit side-by-side</div>
-                <div class="row">
-                    <div class="textbox inline border-light">Inline textbox 1</div>
-                    <div class="textbox inline border-accent">Inline textbox 2</div>
-                    <div class="textbox inline border-red">Inline textbox 3</div>
+        <h1>Testing Textbox and Picture Styles</h1>
+        <section>
+            <div class="demo-note">Basic aligned textboxes using <code>class="textbox left|center|right"</code></div>
+            <div class="textbox left">This is a left-aligned textbox.</div>
+            <div class="textbox center">This is a centered textbox.</div>
+            <div class="textbox right">This is a right-aligned textbox.</div>
+        </section>
+        <section>
+            <div class="demo-note">Inline boxes: add <code>inline</code> to make them sit side-by-side</div>
+            <div class="row">
+                <div class="textbox inline border-light">Inline textbox 1</div>
+                <div class="textbox inline border-accent">Inline textbox 2</div>
+                <div class="textbox inline border-red">Inline textbox 3</div>
+            </div>
+        </section>
+        <section>
+            <div class="demo-note">Pictures inline (use <code>picture inline</code>) and border utilities</div>
+            <div class="row">
+                <img class="picture inline square border-light" src="image.png" alt="left small">
+                <img class="picture inline circle border-accent" src="image.png" alt="center medium">
+                <img class="picture inline rounded border-red" src="image.png" alt="right large">
+            </div>
+        </section>
+        <section>
+            <div class="demo-note">Media object: image on the left, text flows to the right (useful for article blocks)</div>
+            <div class="media" style="background:rgba(255,255,255,0.03);padding:12px;border-radius:8px">
+                <img class="picture left" src="image.png" alt="media thumb" style="max-width:140px;margin-right:14px">
+                <div class="media-body">
+                    <h3 style="margin:0 0 8px;color:#f07">Media title</h3>
+                    <p style="margin:0;color:rgba(255,255,255,0.8)">This text sits to the right of the image using the <code>.media</code> helper. On small screens the layout will stack.</p>
                 </div>
-            </section>
-            <section>
-                <div class="demo-note">Pictures inline (use <code>picture inline</code>) and border utilities</div>
-                <div class="row">
-                    <img class="picture inline square border-light" src="image.png" alt="left small">
-                    <img class="picture inline circle border-accent" src="image.png" alt="center medium">
-                    <img class="picture inline rounded border-red" src="image.png" alt="right large">
-                </div>
-            </section>
-            <section>
-                <div class="demo-note">Media object: image on the left, text flows to the right (useful for article blocks)</div>
-                <div class="media" style="background:rgba(255,255,255,0.03);padding:12px;border-radius:8px">
-                    <img class="picture left" src="image.png" alt="media thumb" style="max-width:140px;margin-right:14px">
-                    <div class="media-body">
-                        <h3 style="margin:0 0 8px;color:#f07">Media title</h3>
-                        <p style="margin:0;color:rgba(255,255,255,0.8)">This text sits to the right of the image using the <code>.media</code> helper. On small screens the layout will stack.</p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="demo-note">Border utility examples (use classes like <code>border-red</code>)</div>
-                <div class="textbox center border-red">Textbox with red border</div>
-                <div class="textbox center border-neon">Textbox with neon border</div>
-            </section>
+            </div>
+        </section>
+        <section>
+            <div class="demo-note">Border utility examples (use classes like <code>border-red</code>)</div>
+            <div class="textbox center border-red">Textbox with red border</div>
+            <div class="textbox center border-neon">Textbox with neon border</div>
+        </section>
+        <section>
+            <div class="demo-note">Side navigation for section sub pages</div>
+            <div class="sidenav">
+                <a href="#subpage1">Subpage 1</a>
+                <a href="#subpage2">Subpage 2</a>
+                <a href="#subpage3">Subpage 3</a>
+            </div>
+        </section>
     </body>
 </html>

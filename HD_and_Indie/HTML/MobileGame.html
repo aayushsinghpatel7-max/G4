@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta author="Matteo Di Fede">
+  <meta author="Michele Piu">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Mobile Games</title>
-  <style type="text/css"> </style>
+  <link rel="stylesheet" href="../../CSS/general.css">
+  <link rel="stylesheet" href="../../CSS/navigation.css">
+
 </head>
+
 <body>
+
+    <!-- =========================================================
+         NAVIGATION BAR
+         =========================================================
+    -->
+    <nav>
+        <ul class="nav">
+            <li><a href="./general.html">Home</a></li>
+            <li><a href="./era1.html">Arcade Games</a><!-- ... --></li>
+            <li><a href="./era2.html">8 Bit and 16 Bit Games</a><!-- ... --></li>
+            <li><a href="./era3.html">Home Consoles</a><!-- ... --></li>
+            <li><a href="./era4.html">3D Games</a><!-- ... --></li>
+            
+            <li>
+                <!-- This is the active section -->
+                <a href="./era5.html" id="currentsection">HD and Indie Games</a>
+                <ul class="subnav">
+                    <!-- Updated with all pages in this section -->
+                    <li><a href="./digital_distribution.html">Digital Distribution</a></li>
+                    <li><a href="./indie_renaissance.html">Indie Renaissance</a></li>
+                    <li><a href="./KeyTitles.html">Key Titles</a></li>
+                    <li><a href="./indie_pioneers.html">The Pioneers</a></li>
+                    <li><a href="./mobile_revolution.html">Mobile Revolution</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="./era6.html">Modern Games</a><!-- ... --></li>
+            <li><a href="./credits.html">Credits</a></li>
+        </ul>
+    </nav>
+
+    <!-- =========================================================
+         MAIN CONTENT SECTION
+         =========================================================
+    -->
+    <div class="box">
+        <!-- Using the .glitch effect from general.css for the title -->
+        <h1 class="glitch" data-text="The Mobile Revolution">The Mobile Revolution</h1>
+        <p>
+            While PCs and consoles were fostering an indie boom, a separate revolution was brewing in our pockets. The launch of the iPhone in 2007 and the App Store in 2008 fundamentally changed who played games, *how* they played, and *how* games made money.
+        </p>
+    </div>
+
+    <!-- Interactive Layout -->
+    <div class="interactive-container">
+
+        <!-- Column 1: The Phone -->
+        <div class="mobile-phone">
+            <!-- Phone "Screen" -->
+            <div class="mobile-screen" id="mobile-screen">
+                <div class="mobile-screen-content" id="screen-content">
+                    <div class="title">Tap an App!</div>
+                </div>
+            </div>
+            
+            <!-- Phone "Apps" -->
+            <div class="mobile-apps">
+                <!-- App 1: App Store -->
+                <button class="app-icon active" data-target="content-store">
+                    <span>App Store</span>
+                </button>
+                
+                <!-- App 2: Casual Games -->
+                <button class="app-icon" data-target="content-casual">
+                    <span>Angry Birds</span>
+                </button>
+                
+                <!-- App 3: Monetization -->
+                <button class="app-icon" data-target="content-monetize">
+                    <span>Candy Crush</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Column 2: The Content -->
+        <div class="content-display">
+            <!-- Content for "App Store" -->
+            <div id="content-store" class="content-panel active">
+                <h2>The New Marketplace</h2>
+                <div class="content">
+                    <p>The Apple App Store (and later, Google Play) was a game-changer. For the first time, *anyone* could develop a game and publish it to a global audience of millions with almost no friction.</p>
+                    <ul>
+                        <li><strong>No Gatekeepers:</strong> Unlike console makers, Apple had a simple, open approval process.</li>
+                        <li><strong>Low Cost:</strong> Publishing cost a fraction of a console or PC release.</li>
+                        <li><strong>New Audience:</strong> The iPhone wasn't just for gamers. It brought games to parents, commuters, and grandparents.</li>
+                    </ul>
+                    <p>This democratization led to an explosion of creativity and experimentation, as tiny studios and even single developers could create and sell a game.</p>
+                </div>
+            </div>
+
+            <!-- Content for "Casual Games" -->
+            <div id="content-casual" class="content-panel">
+                <h2>The Casual Shift</h2>
+                <div class="content">
+                    <p>Games like *Angry Birds*, *Fruit Ninja*, and *Doodle Jump* defined a new genre of "casual" gaming. They were built for the platform:
+                    </p>
+                    <ul>
+                        <li><strong>One-Touch Controls:</strong> Simple, intuitive gameplay that anyone could understand in seconds.</li>
+                        <li><strong>Short Sessions:</strong> Designed to be played in 5-minute bursts while waiting in line or on a commute.</li>
+                        <li><strong>Mass Appeal:</strong> The simple, colorful, and satisfying gameplay loops were universally fun.</li>
+                    </ul>
+                    <p>This wasn't about complex stories or high-end graphics; it was about pure, accessible fun. The "gamer" demographic suddenly expanded to include *everyone* who owned a smartphone.</p>
+                </div>
+            </div>
+
+            <!-- Content for "Monetization" -->
+            <div id="content-monetize" class="content-panel">
+                <h2>New Ways to Pay</h2>
+                <div class="content">
+                    <p>Mobile games pioneered new, and often controversial, business models. The 99-cent premium game quickly gave way to the **"Free-to-Play" (F2P)** model.</p>
+                    <p>Games like *Candy Crush* perfected this:</p>
+                    <ul>
+                        <li><strong>Free Entry:</strong> The game costs nothing to download and start playing.</li>
+                        <li><strong>Microtransactions:</strong> Players can optionally pay small amounts for in-game items, extra lives, or to skip waiting times.</li>
+                        <li><strong>Games as a Service:</strong> The game is never "finished." Developers release a constant stream of new levels and events to keep players engaged (and paying) for years.</li>
+                    </ul>
+                    <aside class="warning" style="text-align: left; margin: 15px 0 0 0;">
+                        This shift to F2P and "gacha" mechanics (loot boxes) brought its own wave of criticism regarding predatory design and gambling-like loops.
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- =========================================================
+         PAGE NAVIGATION
+         =========================================================
+    -->
+    <div class="page-navigation">
+        <a href="indie_pioneers.html">‹‹ Back: The Pioneers</a>
+        <a href="general.html">Return to Home ››</a>
+    </div>
+
+    <!-- =========================================================
+         FOOTER
+         =========================================================
+    -->
+    <footer>
+        History of Video Games — Group Assignment, Software Atelier 1.
+    </footer>
+
 </body>
 </html>

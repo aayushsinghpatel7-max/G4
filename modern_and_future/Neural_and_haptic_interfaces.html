@@ -3,33 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Holovatyi Markiian">
-    <!--==========================================================
-        PROJECT: History of Video Games 
-        ==========================================================
-        PAGE: General Overview / Home Page
-        PURPOSE: Acts as the home hub that introduces the topic and links to all game eras.
-    -->
-
-    <!-- Link to main general styles (layout, timeline, colors) -->
     <link rel="stylesheet" href="../CSS/general.css">
-
-    <!-- Link to navigation bar styles (menu, hover, dropdowns) -->
     <link rel="stylesheet" href="../CSS/navigation.css">
 
     <title>History of Video Games - Home</title>
 </head>
 
 <body>
-
-    <!-- =========================================================
-         NAVIGATION BAR
-         =========================================================
-         PURPOSE: Provides links to each era page + current section indicator.
-         Controlled by navigation.css.
-    -->
     <nav>
         <ul class="nav">
-            <li><a href="./general.html" id="currentsection">Home</a></li>
+            <li><a href="../CSS/general.html">Home</a></li>
             <li>
                 <a href="./era1.html">Arcade Games</a>
                 <ul class="subnav">
@@ -76,51 +59,73 @@
                 </ul>
             </li>
             <li>
-                <a href="./era6.html">Modern Games</a>
+                <a href="./era6.html" id="currentsection">Modern Games</a>
                 <ul class="subnav">
                     <li><a href="./section1.html">Introduction</a></li>
                     <li><a href="./section2.html">Iconic figures</a></li>
                     <li><a href="./section3.html">Technology</a></li>
                 </ul>
             </li>
-            <li><a href="./credits.html" id="currentsection">Credits</a></li>
+            <li><a href="../CSS/credits.html">Credits</a></li>
 
         </ul>
     </nav> 
 
 
-  <!-- ========================= HERO / INTRO ========================= -->
-  <section class="box" style="max-width:1200px;">
-    <h1 class="glitch" data-text="From Pixels to Worlds">From Pixels to Worlds</h1>
-    <p>The history of gaming is more than technology — it’s the story of imagination meeting interactivity.</p>
+  <div id="loading-screen"><div id="loading-text">LOADING...</div></div>
+
+  <section class="box" style="max-width:1100px">
+    <h1 class="glitch" data-text="Neural & Haptic Interfaces">Neural & Haptic Interfaces</h1>
+    <p>As immersion grows, the interface must move closer to the body — from controllers and gloves to eye, hand, and even brain signals. Haptics brings touch into digital worlds; neural I/O seeks direct communication with the nervous system.</p>
   </section>
 
-  <!-- ========================= LONG ESSAY SECTIONS ========================= -->
-  <section style="background:#0d1117;padding:60px 20px;">
-    <div class="box">
-      <h2>The Birth of Play</h2>
-      <p>Long before immersive 3D engines, games were defined by creativity within limits — blinking dots, electric sounds, and endless potential.</p>
-      <div class="image-overlay" data-caption="Early Arcade Machines">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Pac-Man_arcade_machine.jpg" alt="Arcade Cabinet">
+  <section class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Haptics Today</h3>
+        <ul class="content">
+          <li><strong>Vibration &amp; HD rumble:</strong> precise motors create textures and impacts (gamepads, handhelds).</li>
+          <li><strong>Force feedback:</strong> steering wheels, exoskeletons, and resistive triggers simulate weight and tension.</li>
+          <li><strong>Wearables:</strong> vests and gloves deliver spatial patterns and pressure for presence cues.</li>
+        </ul>
+        <div class="figure">
+          <img style="width:80%;" src="img_modern_and_future/valveindex.jpg" alt="Valve Index Controllers">
+          <figcaption><em>Finger tracking + haptics</em> — natural grasping and object interaction.</figcaption>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Eye, Hand &amp; Voice Tracking</h3>
+        <p>Inside‑out cameras and depth sensors map hands; eye tracking enables foveated rendering and natural UI; voice fills gaps for accessibility and speed.</p>
+        <aside class="note">Design rule: avoid “gorilla arm.” Mix brief gestures, eye selection, and voice to reduce fatigue.</aside>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Neural Interfaces (BCI)</h3>
+        <p><strong>Non‑invasive BCIs</strong> (EEG, fNIRS) read brain activity through the scalp to control cursors or trigger actions. <strong>Invasive BCIs</strong> (implants) aim for higher bandwidth and therapeutic use (restoring movement, communication).</p>
+        <div class="figure">
+          <img style="width:50%;" src="img_modern_and_future/EEG.jpg" alt="EEG cap">
+          <figcaption><em>EEG caps</em> — common for research and basic cognitive state detection.</figcaption>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Design Guidelines</h3>
+        <ol class="content">
+          <li>Prefer <strong>multi‑modal</strong> input (hands + gaze + voice + haptics) for robustness.</li>
+          <li>Give <strong>predictable feedback</strong> (visual + haptic) for every action.</li>
+          <li>Respect <strong>comfort limits</strong> (field of view, motion, weight, privacy).</li>
+          <li>Protect <strong>biometric data</strong> (eye movement, EMG/EEG) with opt‑in and on‑device processing where possible.</li>
+        </ol>
       </div>
     </div>
   </section>
-
-  <section style="background:#141922;padding:60px 20px;">
-    <div class="box">
-      <h2>Console Wars</h2>
-      <p>The 1980s and 1990s brought fierce rivalries and unforgettable mascots — Mario vs Sonic, Sega vs Nintendo. Each pixel mattered, each level told a story.</p>
-      <p>Players developed loyalty; consoles became identity. A cultural shift had begun.</p>
-    </div>
-  </section>
-
-  <section style="background:#0d1117;padding:60px 20px;">
-    <div class="box">
-      <h2>The Modern Revolution</h2>
-      <p>High-definition textures, open-world design, and player-driven storytelling redefined the boundaries of what games could express.</p>
-    </div>
-  </section>
-
   <footer>History of Video Games — Group Assignment, Software Atelier 1.</footer>
 </body>
 </html>
