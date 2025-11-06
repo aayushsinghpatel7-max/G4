@@ -55,7 +55,6 @@
         </p>
         <div id="Phone"></div>
     </div>
-
     <!-- Interactive Layout -->
     <div class="interactive-container">
 
@@ -65,20 +64,7 @@
             <div class="mobile-screen" id="mobile-screen">
                 <div class="mobile-screen-content" id="screen-content">
                     <div class="title">
-                        <div>
-                            <h3>📱 App Store</h3>
-                            <p><strong>Top Free Games</strong></p>
-                            <hr>
-
-                            <p>🎯 <strong>Flappy Bird</strong> — ★★★★☆<br>
-                            <button onclick="alert('Downloading Flappy Bird...')">Download</button></p>
-
-                            <p>🍬 <strong>Candy Crush</strong> — ★★★★★<br>
-                            <button onclick="alert('Launching Candy Crush...')">Play</button></p>
-
-                            <p>🐦 <strong>Angry Birds</strong> — ★★★★☆<br>
-                            <button onclick="alert('Starting Angry Birds...')">Play</button></p>
-                            </div>
+                    
                     </div>
                 </div>
             </div>
@@ -86,7 +72,7 @@
             <!-- Phone "Apps" -->
             <div class="mobile-apps">
                 <!-- App 1: App Store -->
-                <button class="app-icon active" data-target="content-store" onclick="window.location.href='MobileGame.html#Phone'">
+                <button class="app-icon" data-target="content-store" onclick="window.location.href='MobileGame.html#Phone'">
                     🛒
                 </button>
                 
@@ -96,28 +82,30 @@
                 </button>
                 
                 <!-- App 3: Monetization -->
-                <button class="app-icon " data-target="content-monetize" onclick="window.location.href='MobileGame3.html#Phone'">
+                <button class="app-icon active" data-target="content-monetize" onclick="window.location.href='MobileGame3.html#Phone'">
                     🪙
                 </button>
             </div>
         </div>
 
         <!-- Column 2: The Content -->
-        <div class="content-display">
-            <!-- Content for "App Store" -->
-            <div id="content-store" class="content-panel active">
-                <h2>The New Marketplace</h2>
+         <div class="content-display">
+            <!-- Content for "Monetization" -->
+            <div id="content-monetize" class="content-panel active">
+                <h2>New Ways to Pay</h2>
                 <div class="content">
-                    <p>The Apple App Store (and later, Google Play) was a game-changer. For the first time, *anyone* could develop a game and publish it to a global audience of millions with almost no friction.</p>
+                    <p>Mobile games pioneered new, and often controversial, business models. The 99-cent premium game quickly gave way to the **"Free-to-Play" (F2P)** model.</p>
+                    <p>Games like *Candy Crush* perfected this:</p>
                     <ul>
-                        <li><strong>No Gatekeepers:</strong> Unlike console makers, Apple had a simple, open approval process.</li>
-                        <li><strong>Low Cost:</strong> Publishing cost a fraction of a console or PC release.</li>
-                        <li><strong>New Audience:</strong> The iPhone wasn't just for gamers. It brought games to parents, commuters, and grandparents.</li>
+                        <li><strong>Free Entry:</strong> The game costs nothing to download and start playing.</li>
+                        <li><strong>Microtransactions:</strong> Players can optionally pay small amounts for in-game items, extra lives, or to skip waiting times.</li>
+                        <li><strong>Games as a Service:</strong> The game is never "finished." Developers release a constant stream of new levels and events to keep players engaged (and paying) for years.</li>
                     </ul>
-                    <p>This democratization led to an explosion of creativity and experimentation, as tiny studios and even single developers could create and sell a game.</p>
+                    <aside class="warning" style="text-align: left; margin: 15px 0 0 0;">
+                        This shift to F2P and "gacha" mechanics (loot boxes) brought its own wave of criticism regarding predatory design and gambling-like loops.
+                    </aside>
                 </div>
             </div>
-
         </div>
     </div>
 
