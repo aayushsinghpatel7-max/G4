@@ -4,40 +4,123 @@
     <meta author="Yan Sun">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/navigation.css">
     <title>Advancing Technology 16-Bit</title>
 </head>
+
 <body>
+    <nav>
+        <ul class="nav">
+            <li><a href="./16bit-technology.html" id="currentsection">Home</a></li>
+            <li>
+                <a href="./era1.html">Arcade Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">History and Evolution</a></li>
+                    <li><a href="./section2.html">Technology and Game design</a></li>
+                    <li><a href="./section3.html">Cultural and social impact</a></li>
+                    <li><a href="./section3.html">Iconic Games and Legacy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era2.html">8 Bit and 16 Bit Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">8-bit era</a></li>
+                    <li><a href="./section2.html">8-bit technology</a></li>
+                    <li><a href="./section3.html">16-bit era</a></li>
+                    <li><a href="./section3.html">16-bit technology</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era3.html">Home Consoles</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Introduction</a></li>
+                    <li><a href="./section2.html">Technology</a></li>
+                    <li><a href="./section3.html">Competitors</a></li>
+                    <li><a href="./section3.html">1983</a></li>
+                    <li><a href="./section3.html">Economic consequences</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era4.html">3D games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">History</a></li>
+                    <li><a href="./section2.html">Consoles</a></li>
+                    <li><a href="./section3.html">Iconic Games</a></li>
+                    <li><a href="./section3.html">Technology and science</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era5.html">HD and Indie Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Introduction and rise of HD</a></li>
+                    <li><a href="./section2.html">Iconic figures</a></li>
+                    <li><a href="./section3.html">Technology</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era6.html">Modern Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Introduction</a></li>
+                    <li><a href="./section2.html">Iconic figures</a></li>
+                    <li><a href="./section3.html">Technology</a></li>
+                </ul>
+            </li>
+            <li><a href="./credits.html" id="currentsection">Credits</a></li>
 
-    <h2>16-bit Graphic Evolution</h2>
-    <p>
-        The 16-bit generation marked a dramatic leap in visual fidelity, introducing richer color palettes, 
-        larger sprites, and multi-layered backgrounds that allowed for parallax scrolling and depth effects. 
-        Consoles such as the Super Nintendo Entertainment System (SNES) and Sega Genesis could display 
-        thousands of colors simultaneously, enabling artists to create smoother gradients and more detailed character designs. 
-        Hardware features like SNES's Mode 7 allowed rotation, scaling, and pseudo-3D transformations, 
-        bringing cinematic perspectives and dynamic world movement to 2D games for the first time.
-    </p>
-    <p>
-        These advancements transformed visual storytelling. Games no longer relied solely on symbolic imagery; 
-        they could now express mood, atmosphere, and realism through shading, animation, and perspective. 
-        Developers used layered environments, soft color transitions, and complex sprite animations to make 
-        gameplay more immersive and expressive — effectively pushing the limits of 2D art.
-    </p>
+        </ul>
+    </nav>
 
-    <h2>Sound Evolution</h2>
-    <p>
-        Alongside graphics, the 16-bit era revolutionized sound design. Dedicated audio chips like the Sony SPC700 
-        in the SNES and the Yamaha YM2612 FM synthesizer in the Genesis introduced multi-channel sound mixing, 
-        sample playback, and advanced synthesis. This allowed composers to create rich, orchestral arrangements 
-        and realistic sound effects that were impossible on earlier 8-bit systems. Music could now carry emotional tone 
-        and cinematic presence, transforming the listening experience into a key storytelling element.
-    </p>
-    <p>
-        The combination of FM synthesis, PCM samples, and expanded memory made it possible to mix realistic instruments 
-        with synthesized tones. Soundtracks became more atmospheric and varied — from the lush melodies of 
-        <em>Final Fantasy VI</em> to the iconic bass-driven energy of <em>Sonic the Hedgehog</em>. 
-        The result was a generation of games whose audio identity was as distinct and memorable as their visuals, 
-        cementing the 16-bit era as a golden age of expressive game design.
-    </p>
+        <!-- ALTERNATING SECTIONS -->
+    <div class="box" style="margin-top:60px;">
+        <h1 class="glitch" data-text="Advancing Technology 16-Bit">Advancing Technology 16-Bit</h1>
+        <p>In specific cases, fourth-generation (16-bit) hardware featured backgrounds with pseudo-3D scaling and rotation as well as support for simulated surround sound.</p>
+    </div>
+
+    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;padding:40px;">
+        <div style="flex:1;min-width:300px;">
+        <img src="./img_8bit_16bit/SNES PPUs.jpg" style="width:100%;border-radius:20px;">
+        </div>
+        <div style="flex:1;min-width:300px;">
+        <h2>16-bit Graphic Evolution</h2>
+        <p>
+            The leap in 16-bit visuals came largely from dedicated graphics hardware rather than raw CPU power. 
+            On the Super Nintendo Entertainment System (SNES), two coordinated PPUs (PPU1 and PPU2) fetched visual data from a 64 KB VRAM composed of two 8-bit, 32 KB RAM chips. 
+            This memory stored tile sets (8x8 pixel graphic units), tile maps (defining where tiles appear), sprite attributes (OAM), and color information (CGRAM). 
+            With multiple background layers (BG1-BG3) and a separate sprite layer, the SNES could scroll each layer independently for parallax depth, apply priority and blending effects, 
+            and display up to 256 on-screen colors selected from a palette of 32,768. 
+            This hardware pipeline allowed artists to build expansive scenes from compact tiles and animate characters as separate sprites without redrawing entire frames. 
+            Features like the SNES's Mode 7 enabled real-time rotation, scaling, and pseudo-3D transformations, delivering cinematic camera movement and dynamic world effects never before seen in 2D games.
+        </p>
+        <p>
+            These advancements fundamentally reshaped visual storytelling. Games no longer relied solely on symbolic or abstract imagery;
+            instead, they could convey mood, atmosphere, and a sense of realism through richer shading, smoother animation, and more convincing perspective.
+            Developers combined layered environments, gentle color gradients, and intricate sprite motion to make gameplay worlds more immersive, expressive,
+            and emotionally nuanced — pushing the boundaries of what 2D art could achieve.
+        </p>
+        </div>
+    </section>
+
+    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;flex-direction:row-reverse;padding:40px;">
+        <div style="flex:1;min-width:300px;">
+        <img src="./img_8bit_16bit/Sony SPC700 and DSP.jpg" style="width:100%;border-radius:20px;">
+        </div>
+        <div style="flex:1;min-width:300px;">
+        <h2>Sound Evolution</h2>
+        <p>
+            Alongside the advancements in graphics, the 16-bit era brought a revolution in sound design, with audio hardware enabling simulated surround effects for the first time in home gaming. 
+            Systems like the SNES incorporated advanced sound subsystems capable of independently processing eight audio channels with precise control over panning, echo, filtering, and phase. 
+            A key example is the Sony SPC700-based S-SMP audio subsystem, which combined an 8-bit SPC700 CPU, a 16-bit digital signal processor (DSP) for mixing sampled audio, and 64 KB of dedicated PSRAM. 
+            Operating completely independently from the main system and clocked at 24.576 MHz on both NTSC and PAL units, the subsystem produced stereo output using eight voices built from BRR-compressed 16-bit audio samples and supported real-time effects such as echo and pitch modulation.
+        </p>
+        <p>
+            By deliberately shifting phase relationships and distributing audio cues across stereo channels, developers could encode soundtracks in a format compatible with Dolby Pro Logic and other surround-decoding technologies. 
+            When played through external stereo equipment equipped with these decoders, the signal was expanded into rear-channel audio, creating the illusion of directional or ambient sound behind the player. 
+            This ability to deliver pseudo-surround sound marked a significant advancement over the monaural and limited stereo output of earlier 8-bit consoles.
+        </p>
+        </div>
+    </section>
+
+    <footer>History of Video Games — Group Assignment, Software Atelier 1.</footer>
 </body>
 </html>
