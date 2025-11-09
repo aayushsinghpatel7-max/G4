@@ -6,14 +6,11 @@
     <!--==========================================================
         PROJECT: History of Video Games 
         ==========================================================
-        PAGE: General Overview / Home Page
-        PURPOSE: Acts as the home hub that introduces the topic and links to all game eras.
+        PAGE: General Overview / Home Page (Layout 3)
+        PURPOSE: Alternating section layout (image left → text right, reversed)
     -->
 
-    <!-- Link to main general styles (layout, timeline, colors) -->
     <link rel="stylesheet" href="general.css">
-
-    <!-- Link to navigation bar styles (menu, hover, dropdowns) -->
     <link rel="stylesheet" href="navigation.css">
 
     <title>History of Video Games - Home</title>
@@ -21,12 +18,7 @@
 
 <body>
 
-    <!-- =========================================================
-         NAVIGATION BAR
-         =========================================================
-         PURPOSE: Provides links to each era page + current section indicator.
-         Controlled by navigation.css.
-    -->
+    <!-- NAVIGATION -->
     <nav>
         <ul class="nav">
             <li><a href="./general.html" id="currentsection">Home</a></li>
@@ -83,38 +75,47 @@
                     <li><a href="./section3.html">Technology</a></li>
                 </ul>
             </li>
-            <li><a href="./credits.html" id="currentsection">Credits</a></li>
-
+            <li><a href="./credits.html">Credits</a></li>
         </ul>
     </nav> 
 
 
-  <!-- ALTERNATING SECTIONS -->
-  <div class="box hero-spacing">
-    <h1 class="glitch" data-text="Power On">Power On</h1>
-    <p>The digital age began with the flicker of a CRT screen and a handful of polygons.</p>
-  </div>
+    <!-- HERO SECTION -->
+    <div class="box">
+        <h1 class="glitch" data-text="Power On">Power On</h1>
+        <p>The digital age began with the flicker of a CRT screen and a handful of polygons.</p>
+    </div>
 
-  <section class="dual-section">
-    <div class="dual-image">
-      <img src="image.png" class="rounded-img">
-    </div>
-    <div class="dual-text">
-      <h2>Arcades: The First Arenas</h2>
-      <p>Neon lights reflected off metal cabinets, each game humming like an engine of joy. Arcades were the original online communities — physical spaces of play.</p>
-    </div>
-  </section>
 
-  <section class="dual-section reverse">
-    <div class="dual-image">
-      <img src="image.png" class="rounded-img">
-    </div>
-    <div class="dual-text">
-      <h2>The Home Console Era</h2>
-      <p>From living rooms to bedrooms, gaming became personal. Entire worlds fit inside grey cartridges, and the joystick gave way to the D-pad.</p>
-    </div>
-  </section>
+    <!-- SECTION 1 (Image Left → Text Right) -->
+    <section>
+        <img src="image.png" alt="Arcade example">
+        <div>
+            <h2>Arcades: The First Arenas</h2>
+            <p>
+                Neon lights reflected off metal cabinets, each game humming like an engine of joy. 
+                Arcades were the original online communities — physical spaces of play and competition.
+            </p>
+        </div>
+    </section>
 
-  <footer>History of Video Games — Group Assignment, Software Atelier 1.</footer>
+
+    <!-- SECTION 2 (Text Left → Image Right) -->
+    <section>
+        <div>
+            <h2>The Home Console Era</h2>
+            <p>
+                From living rooms to bedrooms, gaming became personal. Entire worlds fit inside 
+                grey cartridges, and the joystick gave way to the D-pad.
+            </p>
+        </div>
+        <img src="image.png" alt="Console example">
+    </section>
+
+
+    <footer>
+        History of Video Games — Group Assignment, Software Atelier 1.
+    </footer>
+
 </body>
-</html>
+</html> 
