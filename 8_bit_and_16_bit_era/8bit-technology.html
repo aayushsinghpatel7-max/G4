@@ -4,9 +4,223 @@
     <meta author="Huan Li">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>8bit-technology</title>
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/navigation.css">
 </head>
 <body>
-    
+
+<nav class="subtopic-nav">
+    <a href="8bit-technology.html" class="active">Inside the 8-bit Technology</a>
+    <a href="8bit-impact.html">Impact of the 8-bit Generation</a>
+</nav>
+
+
+<nav>
+        <ul class="nav">
+            <li><a href="../appendix_intro_outro/intro_page.html">Home</a></li>
+            <li>
+                <a href="../Arcade_games/html/Intro.html">Arcade Games</a>
+                <ul class="subnav">
+                    <li><a href="../Arcade_games/html/Intro.html">History and Evolution</a></li>
+                    <li><a href="../Arcade_games/html/AGDes1.html">Technology and Game design</a></li>
+                    <li><a href="../Arcade_games/html/Index.html">Cultural and social impact</a></li>
+                    <li><a href="../Arcade_games/html/keytitles.html">Iconic Games</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="8bit_introduction.html" id="currentsection">8 Bit and 16 Bit Games</a>
+                <ul class="subnav">
+                    <li><a href="8bit_introduction.html">8-bit Era</a></li>
+                    <li><a href="8bit-technology.html">8-bit Technology</a></li>
+                    <li><a href="16bit-overview.html">16-bit Era</a></li>
+                    <li><a href="16bit-technology.html">16-bit Technology</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era3.html">Home Consoles</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Introduction</a></li>
+                    <li><a href="./section2.html">Technology</a></li>
+                    <li><a href="./section3.html">Competitors</a></li>
+                    <li><a href="./section3.html">1983</a></li>
+                    <li><a href="./section3.html">Economic consequences</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era4.html">3D games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">History</a></li>
+                    <li><a href="./section2.html">Consoles</a></li>
+                    <li><a href="./section3.html">Iconic Games</a></li>
+                    <li><a href="./section3.html">Technology and science</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era5.html">HD and Indie Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Introduction and rise of HD</a></li>
+                    <li><a href="./section2.html">Iconic figures</a></li>
+                    <li><a href="./section3.html">Technology</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era6.html">Modern Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Introduction</a></li>
+                    <li><a href="./section2.html">Iconic figures</a></li>
+                    <li><a href="./section3.html">Technology</a></li>
+                </ul>
+            </li>
+            <li><a href="./general.html">Appendix</a></li>
+
+        </ul>
+</nav> 
+
+  <!-- ========================= HERO / INTRO ========================= -->
+    <section class="box" style="max-width:1200px;">
+        <h1 class="glitch" data-text="8-Bit Technology: Core Principles, Hardware & Technical Characteristics">
+            8-Bit Technology: Core Principles, Hardware & Technical Characteristics
+        </h1>
+        <p>The 8-bit era’s technical breakthroughs weren’t just about hardware — they were about turning limitations into creativity, laying the foundation for modern gaming’s technical framework.</p>
+    </section>
+
+    <!-- ========================= LONG ESSAY SECTIONS ========================= -->
+    <section style="background:#0d1117;padding:60px 20px;">
+        <div class="box">
+            <h2>I. Introduction: Definition and Temporal Context of 8-Bit Technology</h2>
+            <p>Timeframe: Clarify the core period of the 8-bit era (approximately 1977–1990), starting with the launch of the Atari 2600 and ending with the discontinuation of the NES.</p>
+            <p>Technical Core: Define the essence of "8-bit" — centered on 8-bit microprocessors (8-bit data bus width), enabling the transition of early video games from arcades to home consoles.</p>
+            <p>Historical Significance: Building on the prototypes of early video games (e.g., Pong), it pioneered the era of "interactive storytelling" and "standardized hardware," laying the foundation for modern gaming technology.</p>
+
+            <div class="image-overlay" data-caption="Timeline of 8-bit Consoles (1977–1990)">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Nintendo_Entertainment_System_-_Top.jpg/800px-Nintendo_Entertainment_System_-_Top.jpg" alt="NES Console">
+            </div>
+        </div>
+    </section>
+
+    <section style="background:#141922;padding:60px 20px;">
+        <div class="box">
+            <h2>II. Core Hardware: The "Heart" Role of 8-Bit Processors</h2>
+            <h3>Technical Essence of 8-Bit Processors</h3>
+            <p>Definition: A data bus that transmits 8 bits (1 byte) of data at a time, with computing power limited by the bit width (compared to the performance leap of subsequent 16-bit processors).</p>
+
+            <h3>Mainstream Chips and Representative Consoles</h3>
+            <ul>
+                <li>MOS 6502: The core processor of the NES (Nintendo Entertainment System) and Apple II (early computer games), featuring low power consumption and low cost suitable for home devices.</li>
+                <li>Zilog Z80: Used in the Sega Master System and later Atari 2600 models, with stronger interrupt handling capabilities to support multitasking (e.g., processing input and screen refresh simultaneously).</li>
+            </ul>
+
+            <h3>Connection Between Processors and Game Logic</h3>
+            <p>Computing Power Limitations: Approximately 1–3 million operations per second, only capable of supporting simple physics (e.g., the jump parabola in Super Mario Bros.) and basic AI (e.g., enemy paths in Contra).</p>
+            <p>Hardware-Software Binding: Developers had to write code directly for the processor (no modern operating system layer), spurring "assembly-level optimization" development techniques.</p>
+
+            <div class="image-overlay" data-caption="MOS 6502 Processor (Core of NES)">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MOS_6502.jpg/800px-MOS_6502.jpg" alt="MOS 6502 Processor">
+            </div>
+        </div>
+    </section>
+
+    <section style="background:#0d1117;padding:60px 20px;">
+        <div class="box">
+            <h2>III. Storage Media: The Revolution from "Fixed" to "Replaceable"</h2>
+            <h3>Early Storage Forms (Late 1970s)</h3>
+            <p>Built-in ROM: Games on consoles like the Magnavox Odyssey (1972) were directly fixed in hardware and could not be replaced (similar to "built-in mini-games").</p>
+            <p>Birth of Cartridges: The Atari 2600 (1977) first popularized replaceable cartridges, storing game data via ROM chips to enable "playing multiple games on one console."</p>
+
+            <h3>Technical Details of 8-Bit Cartridges</h3>
+            <p>Structure: ROM (read-only storage for game code/assets) + a small amount of RAM (temporarily stores game states such as scores and health).</p>
+            <p>Manufacturer Differences: Nintendo’s cartridges included "region-lock chips" (to prevent unlicensed games from running), while Atari cartridges were more open (leading to a flood of low-quality games later).</p>
+            <p>Limitations: Extremely small capacity (early cartridges were only 4–32KB; for example, the original Super Mario Bros. was about 40KB), requiring "data reuse" (e.g., reusing background assets) to compress content.</p>
+
+            <div class="image-overlay" data-caption="8-bit Game Cartridges (NES & Atari 2600)">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/NES-Game-Cartridges.jpg/800px-NES-Game-Cartridges.jpg" alt="8-bit Cartridges">
+            </div>
+        </div>
+    </section>
+
+    <section style="background:#141922;padding:60px 20px;">
+        <div class="box">
+            <h2>IV. Graphics Technology: The "Birth Laboratory" of Pixel Art</h2>
+            <h3>Resolution and Pixel Composition</h3>
+            <p>Mainstream Resolutions: The NES had 256×240 pixels, and the Atari 2600 had 160×192 pixels (far lower than modern screens but well-adapted to CRT TVs).</p>
+            <p>"Functionality" of Pixels: Low resolution forced developers to convey information with minimalist graphics (e.g., Pac-Man’s ghosts distinguished by color blocks).</p>
+
+            <h3>Color and Display Limitations</h3>
+            <p>Palette Bottlenecks: The NES supported only 56 preset colors, with a maximum of 16 displayable at once (including background and characters); the Atari 2600 supported even fewer (only 4 colors simultaneously).</p>
+            <p>Color Design Techniques: Simulating more colors through "visual mixing" of adjacent pixels (e.g., alternating red and yellow pixels appearing orange from a distance).</p>
+
+            <h3>Sprites and Layer Technology</h3>
+            <ul>
+                <li>Definition of Sprites: Movable independent pixel blocks (e.g., game characters). Most 8-bit consoles limited the number of sprites displayable at once (the NES allowed up to 8 per line; exceeding this caused flicker).</li>
+                <li>Background Layers: Static pixels that were fixed or scrollable (e.g., the ground in Super Mario Bros.). "Horizontal/vertical scrolling" technology simulated "large scenes" (actually only part of the screen was displayed, with edges refreshed during scrolling).</li>
+            </ul>
+
+            <div class="image-overlay" data-caption="8-bit Pixel Art (Super Mario Bros. Sprites)">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Super_Mario_Bros._1_-_World_1-1.png/800px-Super_Mario_Bros._1_-_World_1-1.png" alt="8-bit Pixel Art">
+            </div>
+        </div>
+    </section>
+
+    <section style="background:#0d1117;padding:60px 20px;">
+        <div class="box">
+            <h2>V. Audio Technology: The Origin of Chiptune</h2>
+            <h3>Hardware Foundation of Sound Chips</h3>
+            <p>Core Chips: The NES relied on the 2A03 chip (3 square wave channels + 1 noise channel), while the Atari 2600 used the TIA chip (2 channels supporting square waves and noise).</p>
+            <p>Sound Generation Principle: Synthesizing sound effects through electrical signal waveforms (square waves, triangle waves, noise), with no "sampled audio" (unable to play real recordings).</p>
+
+            <h3>Design Logic of Music and Sound Effects</h3>
+            <p>Track Limitations: The NES could play a maximum of 3–5 tracks simultaneously, requiring extremely simple melodies (e.g., the theme of The Legend of Zelda built on repeated scales for memorability).</p>
+            <p>Functionality of Sound Effects: Conveying information with single waveforms (e.g., the "beep-beep" sound in Space Invaders accelerating as enemies approached to signal tension).</p>
+        </div>
+    </section>
+
+    <section style="background:#141922;padding:60px 20px;">
+        <div class="box">
+            <h2>VI. Technical Limitations and "Creative Compromises"</h2>
+            <ul>
+                <li>Memory Constraints: Most 8-bit consoles had only 64–256KB of memory. Developers avoided memory overflow through "stage-by-stage loading" (e.g., world transitions in Super Mario Bros.).</li>
+                <li>Insufficient Processing Power: Simulating smooth movement through "frame animation" (switching static images per frame) instead of real-time calculation (e.g., character running animations in Contra).</li>
+                <li>Case Study: How Super Mario Bros. achieved an immersive experience within 40KB using repeated backgrounds, limited colors, and single-track audio.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="background:#0d1117;padding:60px 20px;">
+        <div class="box">
+            <h2>VII. Conclusion: The Historical Legacy of 8-Bit Technology</h2>
+            <p>Hardware Standards: Established the console architecture of "processor + storage + audio-visual output," becoming a template for subsequent 16-bit and 32-bit technologies.</p>
+            <p>Development Thinking: The "minimalist design philosophy" of innovating within constraints has influenced modern indie games (e.g., the pixel art revival in Stardew Valley).</p>
+
+            <h2>Reference Sources</h2>
+            <h3>Core URLs Provided by Users</h3>
+            <ul>
+                <li>Wikipedia: History of video games: Focus on the "Third generation (8-bit) consoles" section for technical parameters and processor details of the NES and Atari 2600.</li>
+                <li>udonis.co Blog: Reference its analysis of the "link between 8-bit technology and market expansion," especially the promotion of home gaming through cartridge popularization.</li>
+            </ul>
+
+            <h3>Supplementary Authoritative Sources</h3>
+            <ul>
+                <li>Book: <i>The History of Video Games</i> (by Richard Stanton), Chapters 5–6 detail breakthroughs in 8-bit processors and graphics technology.</li>
+                <li>Retro Gaming Wiki: Search for "8-bit hardware specifications" to obtain detailed technical parameter comparisons of various consoles.</li>
+                <li>Nintendo Official Archives: NES Developer Manual — explains programming limitations and optimization techniques for 8-bit games.</li>
+            </ul>
+
+            <h3>Specialized Resources for Audio-Visual Technology</h3>
+            <ul>
+                <li>Chiptune History: Detailed explanation of the working principle of 8-bit sound chips and classic music cases.</li>
+                <li>Pixel Art Museum: Analyzes the design logic and artistic value of 8-bit graphics.</li>
+            </ul>
+        </div>
+    </section>
+
+<div class="page-navigation">
+  <a href="8bit_games.html">← Back to The Iconic 8-bit Games</a>
+  <a href="8bit_technology.html">Next: Impact of the 8-bit Generation →</a>
+</div>
+<footer>
+    History of Video Games — Group Assignment, Software Atelier 1.
+</footer>
+
 </body>
 </html>

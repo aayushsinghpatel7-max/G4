@@ -5,8 +5,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sega 16-Bit consles</title>
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/navigation.css">
 </head>
 <body>
-    
+
+<nav class="subtopic-nav">
+    <a href="16bit-overview.html">The 16-bit Era</a>
+    <a href="16bit-consoles.html">Console Wars</a>
+    <a href="16bit-segas.html" class="active">SEGA</a>
+    <a href="16bit-nintendo.html">Nintendo</a>
+    <a href="16bit-games.html">Masterpieces of the 16-bit Era</a>
+</nav>
+
+
+<nav>
+        <ul class="nav">
+            <li><a href="../appendix_intro_outro/intro_page.html">Home</a></li>
+            <li>
+                <a href="../Arcade_games/html/Intro.html">Arcade Games</a>
+                <ul class="subnav">
+                    <li><a href="../Arcade_games/html/Intro.html">History and Evolution</a></li>
+                    <li><a href="../Arcade_games/html/AGDes1.html">Technology and Game design</a></li>
+                    <li><a href="../Arcade_games/html/Index.html">Cultural and social impact</a></li>
+                    <li><a href="../Arcade_games/html/keytitles.html">Iconic Games</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="8bit_introduction.html" id="currentsection">8 Bit and 16 Bit Games</a>
+                <ul class="subnav">
+                    <li><a href="8bit_introduction.html">8-bit Era</a></li>
+                    <li><a href="8bit-technology.html">8-bit Technology</a></li>
+                    <li><a href="16bit-overview.html">16-bit Era</a></li>
+                    <li><a href="16bit-technology.html">16-bit Technology</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era3.html">Home Consoles</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Introduction</a></li>
+                    <li><a href="./section2.html">Technology</a></li>
+                    <li><a href="./section3.html">Competitors</a></li>
+                    <li><a href="./section3.html">1983</a></li>
+                    <li><a href="./section3.html">Economic consequences</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era4.html">3D games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">History</a></li>
+                    <li><a href="./section2.html">Consoles</a></li>
+                    <li><a href="./section3.html">Iconic Games</a></li>
+                    <li><a href="./section3.html">Technology and science</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era5.html">HD and Indie Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Introduction and rise of HD</a></li>
+                    <li><a href="./section2.html">Iconic figures</a></li>
+                    <li><a href="./section3.html">Technology</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./era6.html">Modern Games</a>
+                <ul class="subnav">
+                    <li><a href="./section1.html">Introduction</a></li>
+                    <li><a href="./section2.html">Iconic figures</a></li>
+                    <li><a href="./section3.html">Technology</a></li>
+                </ul>
+            </li>
+            <li><a href="./general.html">Appendix</a></li>
+
+        </ul>
+</nav> 
+
+    <!-- =========================================================
+         模板开头 BOX + GLITCH 标题
+         ========================================================= -->
+    <div class="box" style="margin-top:60px;">
+        <h1 class="glitch" data-text="Sega’s 16-Bit Revolution: From Underdog to Console War Challenger">
+            Sega’s 16-Bit Revolution: From Underdog to Console War Challenger
+        </h1>
+        <p>
+            Sega turned the 16-bit era into a battle of speed, attitude, and innovation — 
+            challenging Nintendo’s dominance with the Genesis, Sonic the Hedgehog, and a marketing strategy that spoke to a generation.
+        </p>
+    </div>
+
+    <!-- =========================================================
+         ALTERNATING SECTIONS (遵循模板flex布局，图文交替)
+         ========================================================= -->
+    <!-- 第1节：Introduction + Genesis主机图 -->
+    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;padding:40px;">
+        <div style="flex:1;min-width:300px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Sega_Genesis_Model_1.jpg/800px-Sega_Genesis_Model_1.jpg" style="width:100%;border-radius:20px;" alt="Sega Genesis Console">
+        </div>
+        <div style="flex:1;min-width:300px;">
+            <h2>I. Introduction: Sega’s 16-Bit Journey</h2>
+            <p>After struggling with the 8-bit Master System (outmatched by Nintendo’s NES), Sega bet big on 16-bit hardware — the Mega Drive/Genesis.</p>
+            <p>Core goal: Redefine itself as the "edgy" alternative, leveraging speed, arcade legacy, and a new mascot to break Nintendo’s monopoly.</p>
+            <p>Historical stakes: What began as an underdog’s gamble turned into a global console war that shaped gaming’s future.</p>
+        </div>
+    </section>
+
+    <!-- 第2节：Hardware (反向flex，图片在右) -->
+    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;flex-direction:row-reverse;padding:40px;">
+        <div style="flex:1;min-width:300px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MOS_6502.jpg/800px-MOS_6502.jpg" style="width:100%;border-radius:20px;" alt="Genesis Processors">
+        </div>
+        <div style="flex:1;min-width:300px;">
+            <h2>II. Hardware: Engineering for Speed</h2>
+            <h3>Genesis’ Technical DNA</h3>
+            <p>Dual-chip power: Motorola 68000 (7.6 MHz) for fast gameplay + Zilog Z80 (3.58 MHz) for Master System backward compatibility.</p>
+            <p>Graphics: 512-color palette (64 simultaneous) with sprite scaling/rotation — perfect for Sonic’s loop-de-loops.</p>
+            <p>Sound: YM2612 FM synthesis chip, delivering rock-inspired soundtracks (e.g., Streets of Rage).</p>
+            <h3>Expansion Peripherals</h3>
+            <ul>
+                <li>Mega CD (1991): CD-ROM support for FMV and larger games (e.g., Sonic CD).</li>
+                <li>32X (1994): 32-bit upgrade module, though a commercial misstep.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 第3节：Software Ecosystem (正向flex，图片在左) -->
+    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;padding:40px;">
+        <div style="flex:1;min-width:300px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sonic_the_Hedgehog_Mega_Drive_cover.jpg/800px-Sonic_the_Hedgehog_Mega_Drive_cover.jpg" style="width:100%;border-radius:20px;" alt="Sonic the Hedgehog">
+        </div>
+        <div style="flex:1;min-width:300px;">
+            <h2>III. Software Ecosystem: Iconic IPs & Arcade Legacy</h2>
+            <h3>Sonic the Hedgehog: Mario’s Rival</h3>
+            <p>Designed around Genesis’ speed strengths — blue hedgehog with attitude, bundled with consoles to drive sales (15M+ copies sold).</p>
+            <h3>Arcade Ports</h3>
+            <ul>
+                <li>Streets of Rage: Beat ’em ups with legendary soundtracks.</li>
+                <li>Mortal Kombat: Uncensored version (blood via code) outperformed SNES.</li>
+                <li>Golden Axe: Fantasy brawler, direct from Sega’s arcades.</li>
+            </ul>
+            <h3>RPG Hits</h3>
+            <p>Phantasy Star IV (1993): Critically acclaimed sci-fi RPG, proving Genesis’ versatility beyond action.</p>
+        </div>
+    </section>
+
+    <!-- 第4节：Marketing Warfare (反向flex，图片在右) -->
+    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;flex-direction:row-reverse;padding:40px;">
+        <div style="flex:1;min-width:300px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Genesis_Does_What_Nintendon%27t.jpg/800px-Genesis_Does_What_Nintendon%27t.jpg" style="width:100%;border-radius:20px;" alt="Sega Marketing Ad">
+        </div>
+        <div style="flex:1;min-width:300px;">
+            <h2>IV. Marketing Warfare: "Genesis Does What Nintendon’t"</h2>
+            <h3>Target Audience: Teens Over Families</h3>
+            <p>Aggressive ads positioned Genesis as faster, cooler, and more mature — appealing to 13–25-year-olds.</p>
+            <h3>Direct Comparison</h3>
+            <p>Leveraged Nintendo’s censorship (e.g., sanitized Mortal Kombat) as a weakness, highlighting Genesis’ "uncensored" edge.</p>
+            <h3>Mascot Power</h3>
+            <p>Sonic’s rebellious image stood in stark contrast to Mario’s friendly plumber persona, becoming a cultural symbol.</p>
+            <p>Cross-media push: Cartoons, comics, and toys expanded Sega’s reach beyond gaming.</p>
+        </div>
+    </section>
+
+    <!-- 第5节：Regional Performance (正向flex，图片在左) -->
+    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;padding:40px;">
+        <div style="flex:1;min-width:300px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Sega_Mega_Drive_PAL.jpg/800px-Sega_Mega_Drive_PAL.jpg" style="width:100%;border-radius:20px;" alt="Sega Genesis Regional Versions">
+        </div>
+        <div style="flex:1;min-width:300px;">
+            <h2>V. Regional Performance: Wins and Losses</h2>
+            <ul>
+                <li><strong>North America</strong>: Peak 57% market share (1993) — Sonic and teen-focused marketing drove success.</li>
+                <li><strong>Europe</strong>: Steady growth, aided by localized games and Master System loyalists.</li>
+                <li><strong>Japan</strong>: Struggled — Super Famicom’s brand loyalty and RPG exclusives (e.g., Final Fantasy) dominated.</li>
+            </ul>
+            <p>Sega’s global strength lay in understanding regional tastes — edgy for North America, family-friendly enough for Europe, though it never cracked Japan’s Nintendo stronghold.</p>
+        </div>
+    </section>
+
+    <!-- 第6节：Legacy (反向flex，图片在右) -->
+    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;flex-direction:row-reverse;padding:40px;">
+        <div style="flex:1;min-width:300px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Sonic_Mania_cover.jpg/800px-Sonic_Mania_cover.jpg" style="width:100%;border-radius:20px;" alt="Sonic Mania (Retro Revival)">
+        </div>
+        <div style="flex:1;min-width:300px;">
+            <h2>VI. Legacy: Innovation, Mistakes, and Influence</h2>
+            <h3>Industry Impact</h3>
+            <p>Proved Nintendo wasn’t unbeatable — paving the way for Xbox, PlayStation, and future console wars.</p>
+            <h3>Lessons from Failure</h3>
+            <ul>
+                <li>Overexpansion: Mega CD/32X confused consumers and spread resources thin.</li>
+                <li>IP dependency: Relied too heavily on Sonic, lacking Nintendo’s diverse portfolio.</li>
+            </ul>
+            <h3>Cultural Resonance</h3>
+            <p>Retro revival: Mini Genesis, Sonic Mania (2017), and chiptune soundtracks keep the era alive.</p>
+            <p>Sega’s 16-bit attitude defined a generation — proving gaming could be rebellious, fast, and unapologetically fun.</p>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         conclusion + references 
+         ========================================================= -->
+    <div class="box" style="margin:40px auto;">
+        <h2>VII. Conclusion: Sega’s Defining Chapter</h2>
+        <p>Sega’s 16-bit journey was a masterclass in bold risk-taking. Though it never fully dethroned Nintendo, the Genesis turned Sega from a niche arcade brand into a global household name.</p>
+        <p>Its legacy isn’t just in hardware or games — it’s in proving that competition drives innovation, and that a brand with attitude can win the hearts of a generation.</p>
+
+        <h2>Reference Sources</h2>
+        <h3>Core URLs Provided by Users</h3>
+        <ul>
+            <li>Wikipedia: "Fourth generation (16-bit) consoles" and "Sega Mega Drive/Genesis" sections.</li>
+            <li>udonis.co Blog: Analysis of 16-bit market dynamics and Sega’s strategy.</li>
+        </ul>
+        <h3>Supplementary Authoritative Sources</h3>
+        <ul>
+            <li>Book: <i>Console Wars</i> (Blake J. Harris) — Deep dive into Sega-Nintendo rivalry.</li>
+            <li>Sega Retro Wiki: Technical details on Genesis hardware and game development.</li>
+            <li>IGN’s History of Sega: Overview of Genesis’ cultural impact.</li>
+            <li>16-bit Console Sales Data: Global Genesis vs. SNES sales figures.</li>
+        </ul>
+        <h3>Documentaries & Interviews</h3>
+        <ul>
+            <li><i>Sega: The History of a Video Game Giant</i> (Retro Gaming Docs, YouTube).</li>
+            <li>Yuji Naka Interviews: Creator of Sonic on Genesis’ hardware-software synergy.</li>
+        </ul>
+    </div>
+
+<div class="page-navigation">
+  <a href="16bit-consoles.html">← Back to Console Wars</a>
+  <a href="16bit-nintendo.html">Next: Nintendo →</a>
+</div>
+<footer>
+    History of Video Games — Group Assignment, Software Atelier 1.
+</footer>
+
 </body>
 </html>
