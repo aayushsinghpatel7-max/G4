@@ -6,8 +6,8 @@
     <!--==========================================================
         PROJECT: History of Video Games 
         ==========================================================
-        PAGE: General Overview / Home Page (Layout 3)
-        PURPOSE: Alternating section layout (image left → text right, reversed)
+        PAGE: General Overview / Home Page
+        PURPOSE: Acts as the home hub that introduces the topic and links to all game eras.
     -->
 
     <link rel="stylesheet" href="general.css">
@@ -75,47 +75,56 @@
                     <li><a href="./section3.html">Technology</a></li>
                 </ul>
             </li>
-            <li><a href="./credits.html">Credits</a></li>
+            <li><a href="./credits.html" id="currentsection">Credits</a></li>
         </ul>
     </nav> 
 
-
-    <!-- HERO SECTION -->
+    <!-- HERO BOX -->
     <div class="box">
-        <h1 class="glitch" data-text="Power On">Power On</h1>
-        <p>The digital age began with the flicker of a CRT screen and a handful of polygons.</p>
+        <h1 class="glitch" data-text="POWER ON">POWER ON</h1>
+        <p class="textbox center">
+            From buzzing arcades to handheld adventures and living room revolutions, video games evolved from flickering pixels into entire digital universes. This timeline explores the eras where innovation, obsession, and creativity merged into one industry that reshaped entertainment, culture, and technology.
+        </p>
     </div>
 
-
-    <!-- SECTION 1 (Image Left → Text Right) -->
-    <section>
-        <img src="image.png" alt="Arcade example">
-        <div>
-            <h2>Arcades: The First Arenas</h2>
+    <!-- SECTION 1 -->
+    <div class="row">
+        <div class="textbox left">
+            <h2>Arcades: The First Battleground</h2>
             <p>
-                Neon lights reflected off metal cabinets, each game humming like an engine of joy. 
-                Arcades were the original online communities — physical spaces of play and competition.
+            Arcades were more than places to play — they were coliseums of glowing pixels.
+            One coin meant one chance. Your audience was real, loud, and unforgiving.
+            High scores were reputation. Cabinets were shrines.
             </p>
         </div>
-    </section>
+        <img class="picture right rounded border-neon" src="image.png" alt="Arcade machines">
+    </div>
 
-
-    <!-- SECTION 2 (Text Left → Image Right) -->
-    <section>
-        <div>
-            <h2>The Home Console Era</h2>
+    <!-- SECTION 2 -->
+    <div class="row">
+        <img class="picture left rounded border-accent" src="image.png" alt="Retro console">
+        <div class="textbox right">
+            <h2>The Shift to Home</h2>
             <p>
-                From living rooms to bedrooms, gaming became personal. Entire worlds fit inside 
-                grey cartridges, and the joystick gave way to the D-pad.
+            Consoles brought the arcade home. No quarters. No crowds.
+            Just cartridges, glowing TVs, and the quiet competition of siblings on the couch.
             </p>
         </div>
-        <img src="image.png" alt="Console example">
-    </section>
+    </div>
 
+    <!-- SECTION 3 -->
+    <div class="row">
+        <div class="textbox left">
+            <h2>Pop Culture Power-Up</h2>
+            <p>
+            Arcades bled into movies, music, and fashion.
+            They turned joystick legends into cultural icons and pixels into personality.
+            </p>
+        </div>
+        <img class="picture right rounded border-neon" src="image.png" alt="80s arcade culture">
+    </div>
 
-    <footer>
-        History of Video Games — Group Assignment, Software Atelier 1.
-    </footer>
+    <footer>History of Video Games — Group Assignment, Software Atelier 1.</footer>
 
 </body>
-</html> 
+</html>

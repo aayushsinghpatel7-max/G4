@@ -218,7 +218,7 @@ p {
 }
 
 /* =========================================================
-   NEON BUTTON — inspired by arcade console lights
+   NEON BUTTON — (inspired by arcade console lights
    ========================================================= */
 /* PURPOSE: make call-to-action links look like glowing interactive buttons.  
    HOW: cyan border + inset shadow; hover inverts background and text for tactile feel. */
