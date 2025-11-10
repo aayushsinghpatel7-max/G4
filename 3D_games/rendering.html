@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta author="Lorenzo Simone">
+     <meta charset="UTF-8">
+    <!-- Loads the main stylesheet for the site's layout, theme, and colors -->
+    <link rel="stylesheet" href="../CSS/general.css">
+    <!-- Loads the stylesheet specifically for the top navigation bar -->
+    <link rel="stylesheet" href="../CSS/navigation.css">
+    <!-- Sets the viewport to ensure the page scales correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Game Rendering</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>3D Game Rendering — The Transition Years</h1>
+
+        <section>
+            <p>
+                This page summarizes how 3D rendering evolved during the transitional era when games moved from
+                2D and sprite-based techniques to real-time 3D (late 1980s — late 1990s).
+            </p>
+        </section>
+
+        <section>
+            <h2>Historical context</h2>
+            <p>
+                Early arcade and home games relied on sprites and 2D tricks. The move to true 3D was driven by faster CPUs,
+                dedicated graphics chips, and new consoles/PC cards (PlayStation, Sega Saturn, Nintendo 64, 3dfx Voodoo).
+            </p>
+        </section>
+
+        <section>
+            <h2>Core techniques</h2>
+            <ul>
+                <li><strong>Software rasterization:</strong> CPU-driven triangle rasterizers.</li>
+                <li><strong>Fixed-function pipeline:</strong> Hardware for texture mapping and basic lighting (Gouraud).</li>
+                <li><strong>Texture & MIP-mapping:</strong> Reduced aliasing and improved perf on limited GPUs.</li>
+                <li><strong>Z-buffering:</strong> Per-pixel depth testing for correct occlusion.</li>
+                <li><strong>Geometry culling:</strong> BSP, portals and LOD to manage polygon budgets.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Hardware milestones</h2>
+            <p>
+                Early 1990s: software renderers and console custom chips. Mid-1990s: 3D accelerators (3dfx). Late-1990s: mature fixed-function GPUs and standardized APIs (Direct3D, OpenGL).
+            </p>
+        </section>
+
+        <section>
+            <h2>Legacy</h2>
+            <p>
+                The era fixed rasterization as real-time standard and shaped art/gameplay styles (low-poly, texture atlases).
+            </p>
+        </section>
+<img src="rendering.jpg" alt="rendering of the 3d games." title="The rendering of the games after the 3d revolution." style="width: 60%">
+        
+    </main>
+</body>
+</html>
