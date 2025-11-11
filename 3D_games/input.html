@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta author="Lorenzo Simone">
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <!-- Loads the main stylesheet for the site's layout, theme, and colors -->
     <link rel="stylesheet" href="../CSS/general.css">
     <!-- Loads the stylesheet specifically for the top navigation bar -->
@@ -12,7 +13,15 @@
     <title>3D Game input</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
+
+    <nav class="subtopic-nav">
+        <a href="gameplay.html">3D Gameplay Design</a>
+        <a href="input.html" class="active">Inputs</a>
+        <a href="physics.html">Physics in 3D Worlds</a>
+        <a href="rendering.html">Rendering and Graphics</a>
+    </nav>
 
     <nav>
         <ul class="nav">
@@ -36,13 +45,15 @@
                 </ul>
             </li>
             <li>
-                <a href="../Early_home_consoles/Introduction to home consoles.html to home consoles.html">Home Consoles</a>
+                <a href="../Early_home_consoles/Introduction to home consoles.html to home consoles.html">Home
+                    Consoles</a>
                 <ul class="subnav">
                     <li><a href="../Early_home_consoles/Introduction to home consoles.html">Introduction</a></li>
                     <li><a href="../Early_home_consoles/TechnologyandInnovation.html">Technology</a></li>
                     <li><a href="../Early_home_consoles/The1983VideoGameCrash.html">1983 and Competitors</a></li>
                     <li><a href="../Early_home_consoles/Magnavox Odyssey.html">Significant Figures</a></li>
-                    <li><a href="../Early_home_consoles/Economic & Cultural Consequences.html">Economic consequences</a></li>
+                    <li><a href="../Early_home_consoles/Economic & Cultural Consequences.html">Economic consequences</a>
+                    </li>
                 </ul>
             </li>
             <li>
@@ -65,8 +76,10 @@
             <li>
                 <a href="../modern_and_future/MobileGamingIntroduction.html">Modern Games</a>
                 <ul class="subnav">
-                    <li><a href="../modern_and_future/MobileGamingIntroduction.html">The Evolution of Modern Gaming</a></li>
-                    <li><a href="../modern_and_future/Vr_and_Ar_experiences.html">Immersive Technologies: VR, AR & Beyond</a></li>
+                    <li><a href="../modern_and_future/MobileGamingIntroduction.html">The Evolution of Modern Gaming</a>
+                    </li>
+                    <li><a href="../modern_and_future/Vr_and_Ar_experiences.html">Immersive Technologies: VR, AR &
+                            Beyond</a></li>
                     <li><a href="../modern_and_future/cloud.html">Connected Worlds and Cloud Integration</a></li>
                     <li><a href="../modern_and_future/MobileBestGame.html">Iconic Figures of the Present</a></li>
                     <li><a href="../modern_and_future/Ai.html">The Intelligent Future of Gaming</a></li>
@@ -82,14 +95,24 @@
 
         <section>
             <p>
-                In 3D games, input refers to the player’s control signals from devices like keyboards, mice, or gamepads used to navigate and interact within a three-dimensional environment. These inputs manage character movements, camera angles, and game actions for an immersive experience.
+                In 3D games, input refers to the player’s control signals from devices like keyboards, mice, or gamepads
+                used to navigate and interact within a three-dimensional environment. These inputs manage character
+                movements, camera angles, and game actions for an immersive experience.
             </p>
         </section>
 
         <section>
             <h2>Historical context</h2>
             <p>
-                The historical context of input systems in 3D games begins with early arcade and home consoles, evolving from simple 2D control schemes to complex 3D interfaces. Significant milestones include the 1983 Nintendo Famicon introducing controls for both hands and directional buttons. The Nintendo 64 in 1994 was the first true 3D console, adding joysticks to controllers for navigating 3D spaces. By 1996, the Sony DualShock controller introduced dual joysticks and shoulder buttons, setting the standard for 3D game input complexity. Early 3D games faced challenges in rendering and input methods, progressing from wireframe simulations to fully textured 3D environments, with developers continually improving input devices to enhance player control and immersion in 3D worlds. This evolution reflects increasing complexity of game interfaces to allow richer player expression but also higher learning curves
+                The historical context of input systems in 3D games begins with early arcade and home consoles, evolving
+                from simple 2D control schemes to complex 3D interfaces. Significant milestones include the 1983
+                Nintendo Famicon introducing controls for both hands and directional buttons. The Nintendo 64 in 1994
+                was the first true 3D console, adding joysticks to controllers for navigating 3D spaces. By 1996, the
+                Sony DualShock controller introduced dual joysticks and shoulder buttons, setting the standard for 3D
+                game input complexity. Early 3D games faced challenges in rendering and input methods, progressing from
+                wireframe simulations to fully textured 3D environments, with developers continually improving input
+                devices to enhance player control and immersion in 3D worlds. This evolution reflects increasing
+                complexity of game interfaces to allow richer player expression but also higher learning curves
             </p>
         </section>
 
@@ -97,24 +120,42 @@
             <h2>Core techniques</h2>
             <ul>
                 <p>
-Core techniques in 3D game input systems focus on capturing and interpreting player actions to control characters and camera movement in a 3D space. These include:
-	Using raycasting to translate screen coordinates (like mouse clicks) into 3D world positions for interaction or navigation.
+                    Core techniques in 3D game input systems focus on capturing and interpreting player actions to
+                    control characters and camera movement in a 3D space. These include:
+                    Using raycasting to translate screen coordinates (like mouse clicks) into 3D world positions for
+                    interaction or navigation.
 
-		Implementing analog input from joysticks or gamepads to allow smooth, variable-speed movement and camera rotation.
-		Structuring input actions into configurable maps for different devices and gameplay contexts, allowing support for keyboard, gamepad, touch, and VR controllers.
-		Handling input sensitivity, dead zones, and scaling to customize control responsiveness and prevent unintended inputs.
-		Managing multiple players with separate input handlers and supporting runtime rebindings for customizable controls.
-		Utilizing physics engines to apply forces and collisions correlated with player input for realistic movement.
+                    Implementing analog input from joysticks or gamepads to allow smooth, variable-speed movement and
+                    camera rotation.
+                    Structuring input actions into configurable maps for different devices and gameplay contexts,
+                    allowing support for keyboard, gamepad, touch, and VR controllers.
+                    Handling input sensitivity, dead zones, and scaling to customize control responsiveness and prevent
+                    unintended inputs.
+                    Managing multiple players with separate input handlers and supporting runtime rebindings for
+                    customizable controls.
+                    Utilizing physics engines to apply forces and collisions correlated with player input for realistic
+                    movement.
 
-</p>
-        <section>
-            <h2>Peripherals</h2>
-            <p>
-Common peripherals used for 3D gaming include: Keyboards (most important keys WASD), game controllers (so you have more sensibility in race games for example), and now VR
-        
-            <img src="input.jpeg" alt="Input of the 3d games." title="The Input of the games.">
+                </p>
+                <section>
+                    <h2>Peripherals</h2>
+                    <p>
+                        Common peripherals used for 3D gaming include: Keyboards (most important keys WASD), game
+                        controllers (so you have more sensibility in race games for example), and now VR
 
-        
+                        <img src="img/input.jpeg" alt="Input of the 3d games." title="The Input of the games.">
+
+
     </main>
+
+    <div class="page-navigation">
+        <a href="gameplay.html">← Back to 3D Gameplay Design</a>
+        <a href="physics.html">Next: Physics in 3D Worlds →</a>
+    </div>
+
+    <footer>History of Video Games — Group Assignment, Software Atelier 1.</footer>
+
+
 </body>
+
 </html>

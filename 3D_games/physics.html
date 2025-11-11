@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta author="Lorenzo Simone">
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <!-- Loads the main stylesheet for the site's layout, theme, and colors -->
     <link rel="stylesheet" href="../CSS/general.css">
     <!-- Loads the stylesheet specifically for the top navigation bar -->
@@ -12,13 +13,15 @@
     <title>3D Game physics</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
 
-<nav class="subtopic-nav">
-  <a href="gameplay.html">3D Gameplay Design</a>
-  <a href="physics.html" class="active">Physics in 3D Worlds</a>
-  <a href="rendering.html">Rendering and Graphics</a>
-</nav>
+    <nav class="subtopic-nav">
+        <a href="gameplay.html">3D Gameplay Design</a>
+        <a href="input.html">Inputs</a>
+        <a href="physics.html" class="active">Physics in 3D Worlds</a>
+        <a href="rendering.html">Rendering and Graphics</a>
+    </nav>
 
     <nav>
         <ul class="nav">
@@ -42,13 +45,15 @@
                 </ul>
             </li>
             <li>
-                <a href="../Early_home_consoles/Introduction to home consoles.html to home consoles.html">Home Consoles</a>
+                <a href="../Early_home_consoles/Introduction to home consoles.html to home consoles.html">Home
+                    Consoles</a>
                 <ul class="subnav">
                     <li><a href="../Early_home_consoles/Introduction to home consoles.html">Introduction</a></li>
                     <li><a href="../Early_home_consoles/TechnologyandInnovation.html">Technology</a></li>
                     <li><a href="../Early_home_consoles/The1983VideoGameCrash.html">1983 and Competitors</a></li>
                     <li><a href="../Early_home_consoles/Magnavox Odyssey.html">Significant Figures</a></li>
-                    <li><a href="../Early_home_consoles/Economic & Cultural Consequences.html">Economic consequences</a></li>
+                    <li><a href="../Early_home_consoles/Economic & Cultural Consequences.html">Economic consequences</a>
+                    </li>
                 </ul>
             </li>
             <li>
@@ -71,8 +76,10 @@
             <li>
                 <a href="../modern_and_future/MobileGamingIntroduction.html">Modern Games</a>
                 <ul class="subnav">
-                    <li><a href="../modern_and_future/MobileGamingIntroduction.html">The Evolution of Modern Gaming</a></li>
-                    <li><a href="../modern_and_future/Vr_and_Ar_experiences.html">Immersive Technologies: VR, AR & Beyond</a></li>
+                    <li><a href="../modern_and_future/MobileGamingIntroduction.html">The Evolution of Modern Gaming</a>
+                    </li>
+                    <li><a href="../modern_and_future/Vr_and_Ar_experiences.html">Immersive Technologies: VR, AR &
+                            Beyond</a></li>
                     <li><a href="../modern_and_future/cloud.html">Connected Worlds and Cloud Integration</a></li>
                     <li><a href="../modern_and_future/MobileBestGame.html">Iconic Figures of the Present</a></li>
                     <li><a href="../modern_and_future/Ai.html">The Intelligent Future of Gaming</a></li>
@@ -88,42 +95,63 @@
 
         <section>
             <p>
-                Physics in 3D games uses Newtonian dynamics to simulate object movements and interactions in a virtual space. It involves calculating forces, collisions, and motions to create realistic animations and responsive gameplay
+                Physics in 3D games uses Newtonian dynamics to simulate object movements and interactions in a virtual
+                space. It involves calculating forces, collisions, and motions to create realistic animations and
+                responsive gameplay
             </p>
         </section>
 
         <section>
             <h2>Historical context</h2>
             <p>
-                The historical context of 3D game physics development started in the early 1970s with primitive 3D games like Maze War, which introduced basic 3D gameplay and multiplayer interaction. Over time, advancements in computing power and dedicated 3D graphics accelerators in the mid-1990s enabled more complex and realistic physics simulations. Notable milestones include Quake (1996), which integrated physics to enhance object interactions, and Trespasser (1998), the first game to attempt a complete physics engine with ragdoll effects, though it was ahead of its time technologically. The evolution of 3D physics significantly expanded immersion by enabling realistic movements, collisions, and environmental interactions, paralleling advances in hardware and game engine technology
+                The historical context of 3D game physics development started in the early 1970s with primitive 3D games
+                like Maze War, which introduced basic 3D gameplay and multiplayer interaction. Over time, advancements
+                in computing power and dedicated 3D graphics accelerators in the mid-1990s enabled more complex and
+                realistic physics simulations. Notable milestones include Quake (1996), which integrated physics to
+                enhance object interactions, and Trespasser (1998), the first game to attempt a complete physics engine
+                with ragdoll effects, though it was ahead of its time technologically. The evolution of 3D physics
+                significantly expanded immersion by enabling realistic movements, collisions, and environmental
+                interactions, paralleling advances in hardware and game engine technology
             </p>
         </section>
 
         <section>
             <h2>Principals the programmer had to follow</h2>
             <ul>
-                <p>Early 3D game physics was implemented using fundamental principles of classical mechanics with simplified mathematical models. Developers primarily used kinematics and dynamics equations to calculate object positions, velocities, and accelerations over time, often relying on numerical integration methods like Euler or Runge-Kutta. Collision detection and response algorithms identified when objects intersected and computed realistic reactions such as bouncing or stopping. Physics engines were initially custom-coded for specific games, handling rigid bodies, particle systems, and later more complex simulations like cloth and ragdoll physics. Speed and believable behavior were prioritized over absolute accuracy to ensure smooth gameplay performance on limited hardware 
-            </p>
+                <p>Early 3D game physics was implemented using fundamental principles of classical mechanics with
+                    simplified mathematical models. Developers primarily used kinematics and dynamics equations to
+                    calculate object positions, velocities, and accelerations over time, often relying on numerical
+                    integration methods like Euler or Runge-Kutta. Collision detection and response algorithms
+                    identified when objects intersected and computed realistic reactions such as bouncing or stopping.
+                    Physics engines were initially custom-coded for specific games, handling rigid bodies, particle
+                    systems, and later more complex simulations like cloth and ragdoll physics. Speed and believable
+                    behavior were prioritized over absolute accuracy to ensure smooth gameplay performance on limited
+                    hardware
+                </p>
             </ul>
         </section>
-            <img src="fisica.jpeg" alt="Physics of the 3d games." title="The Physics and how it changed.">
+        <img src="img/fisica.jpeg" alt="Physics of the 3d games." title="The Physics and how it changed.">
         <section>
             <h2>Formulas</h2>
             <p>
-The most important physics formulas for 3D games are based on classical mechanics, including: Kinematic equation (applied to object in motion),  Friction force (whem the palyer had to move something) and Equation of gravity, because every object is under this force, wherever the player is       </section>
+                The most important physics formulas for 3D games are based on classical mechanics, including: Kinematic
+                equation (applied to object in motion), Friction force (whem the palyer had to move something) and
+                Equation of gravity, because every object is under this force, wherever the player is
+        </section>
 
         <footer>
             Page created for a historical overview of 3D rendering during the transitional era.
         </footer>
     </main>
 
-<div class="page-navigation">
-  <a href="gameplay.html">← Back to 3D Gameplay Design</a>
-  <a href="rendering.html">Next: Rendering and Graphics →</a>
-</div>
+    <div class="page-navigation">
+        <a href="input.html">← Back to Inputs</a>
+        <a href="rendering.html">Next: Rendering and Graphics →</a>
+    </div>
 
-<footer>History of Video Games — Group Assignment, Software Atelier 1.</footer>
+    <footer>History of Video Games — Group Assignment, Software Atelier 1.</footer>
 
 
 </body>
+
 </html>
