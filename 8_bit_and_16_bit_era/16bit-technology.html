@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta author="Yan Sun">
     <meta charset="UTF-8">
@@ -11,13 +12,13 @@
 
 <body>
 
-<nav class="subtopic-nav">
-    <a href="16bit-technology.html" class="active">Advancing Technology</a>
-    <a href="16bit-impact.html">Cultural Legacy of the 16-bit Era</a>
-</nav>
+    <nav class="subtopic-nav">
+        <a href="16bit-technology.html" class="active">Advancing Technology</a>
+        <a href="16bit-impact.html">Cultural Legacy of the 16-bit Era</a>
+    </nav>
 
 
-<nav>
+    <nav>
         <ul class="nav">
             <li><a href="../appendix_intro_outro/intro_page.html">Home</a></li>
             <li>
@@ -39,13 +40,14 @@
                 </ul>
             </li>
             <li>
-                <a href="../Early_home_consoles/Introduction to home consoles.html to home consoles.html">Home Consoles</a>
+                <a href="../Early_home_consoles/Introduction to home consoles.html">Home Consoles</a>
                 <ul class="subnav">
                     <li><a href="../Early_home_consoles/Introduction to home consoles.html">Introduction</a></li>
                     <li><a href="../Early_home_consoles/TechnologyandInnovation.html">Technology</a></li>
                     <li><a href="../Early_home_consoles/The1983VideoGameCrash.html">1983 and Competitors</a></li>
                     <li><a href="../Early_home_consoles/Magnavox Odyssey.html">Significant Figures</a></li>
-                    <li><a href="../Early_home_consoles/Economic & Cultural Consequences.html">Economic consequences</a></li>
+                    <li><a href="../Early_home_consoles/Economic & Cultural Consequences.html">Economic consequences</a>
+                    </li>
                 </ul>
             </li>
             <li>
@@ -68,8 +70,10 @@
             <li>
                 <a href="../modern_and_future/MobileGamingIntroduction.html">Modern Games</a>
                 <ul class="subnav">
-                    <li><a href="../modern_and_future/MobileGamingIntroduction.html">The Evolution of Modern Gaming</a></li>
-                    <li><a href="../modern_and_future/Vr_and_Ar_experiences.html">Immersive Technologies: VR, AR & Beyond</a></li>
+                    <li><a href="../modern_and_future/MobileGamingIntroduction.html">The Evolution of Modern Gaming</a>
+                    </li>
+                    <li><a href="../modern_and_future/Vr_and_Ar_experiences.html">Immersive Technologies: VR, AR &
+                            Beyond</a></li>
                     <li><a href="../modern_and_future/cloud.html">Connected Worlds and Cloud Integration</a></li>
                     <li><a href="../modern_and_future/MobileBestGame.html">Iconic Figures of the Present</a></li>
                     <li><a href="../modern_and_future/Ai.html">The Intelligent Future of Gaming</a></li>
@@ -78,65 +82,84 @@
             <li><a href="appendix.html">Appendix</a></li>
 
         </ul>
-</nav> 
+    </nav>
 
-        <!-- ALTERNATING SECTIONS -->
-    <div class="box" style="margin-top:60px;">
+
+    <div class="box">
         <h1 class="glitch" data-text="Advancing Technology 16-Bit">Advancing Technology 16-Bit</h1>
-        <p>In specific cases, fourth-generation (16-bit) hardware featured backgrounds with pseudo-3D scaling and rotation as well as support for simulated surround sound.</p>
+        <p>In specific cases, fourth-generation (16-bit) hardware featured backgrounds with pseudo-3D scaling and
+            rotation as well as support for simulated surround sound.</p>
     </div>
 
-    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;padding:40px;">
-        <div style="flex:1;min-width:300px;">
-        <img src="./img_8bit_16bit/SNES PPUs.jpg" style="width:100%;border-radius:20px;">
+    <section>
+        <div>
+            <img src="./img_8bit_16bit/SNES PPUs.jpg">
         </div>
         <div style="flex:1;min-width:300px;">
-        <h2>16-bit Graphic Evolution</h2>
-        <p>
-            The leap in 16-bit visuals came largely from dedicated graphics hardware rather than raw CPU power. 
-            On the Super Nintendo Entertainment System (SNES), two coordinated PPUs (PPU1 and PPU2) fetched visual data from a 64 KB VRAM composed of two 8-bit, 32 KB RAM chips. 
-            This memory stored tile sets (8x8 pixel graphic units), tile maps (defining where tiles appear), sprite attributes (OAM), and color information (CGRAM). 
-            With multiple background layers (BG1-BG3) and a separate sprite layer, the SNES could scroll each layer independently for parallax depth, apply priority and blending effects, 
-            and display up to 256 on-screen colors selected from a palette of 32,768. 
-            This hardware pipeline allowed artists to build expansive scenes from compact tiles and animate characters as separate sprites without redrawing entire frames. 
-            Features like the SNES's Mode 7 enabled real-time rotation, scaling, and pseudo-3D transformations, delivering cinematic camera movement and dynamic world effects never before seen in 2D games.
-        </p>
-        <p>
-            These advancements fundamentally reshaped visual storytelling. Games no longer relied solely on symbolic or abstract imagery;
-            instead, they could convey mood, atmosphere, and a sense of realism through richer shading, smoother animation, and more convincing perspective.
-            Developers combined layered environments, gentle color gradients, and intricate sprite motion to make gameplay worlds more immersive, expressive,
-            and emotionally nuanced - pushing the boundaries of what 2D art could achieve.
-        </p>
-        </div>
-    </section>
-
-    <section style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;flex-direction:row-reverse;padding:40px;">
-        <div style="flex:1;min-width:300px;">
-        <img src="./img_8bit_16bit/Sony SPC700 and DSP.jpg" style="width:100%;border-radius:20px;">
-        </div>
-        <div style="flex:1;min-width:300px;">
-        <h2>Sound Evolution</h2>
-        <p>
-            Alongside the advancements in graphics, the 16-bit era brought a revolution in sound design, with audio hardware enabling simulated surround effects for the first time in home gaming. 
-            Systems like the SNES incorporated advanced sound subsystems capable of independently processing eight audio channels with precise control over panning, echo, filtering, and phase. 
-            A key example is the Sony SPC700-based S-SMP audio subsystem, which combined an 8-bit SPC700 CPU, a 16-bit digital signal processor (DSP) for mixing sampled audio, and 64 KB of dedicated PSRAM. 
-            Operating completely independently from the main system and clocked at 24.576 MHz on both NTSC and PAL units, the subsystem produced stereo output using eight voices built from BRR-compressed 16-bit audio samples and supported real-time effects such as echo and pitch modulation.
-        </p>
-        <p>
-            By deliberately shifting phase relationships and distributing audio cues across stereo channels, developers could encode soundtracks in a format compatible with Dolby Pro Logic and other surround-decoding technologies. 
-            When played through external stereo equipment equipped with these decoders, the signal was expanded into rear-channel audio, creating the illusion of directional or ambient sound behind the player. 
-            This ability to deliver pseudo-surround sound marked a significant advancement over the monaural and limited stereo output of earlier 8-bit consoles.
-        </p>
+            <h2>16-bit Graphic Evolution</h2>
+            <p>
+                The leap in 16-bit visuals came largely from dedicated graphics hardware rather than raw CPU power.
+                On the Super Nintendo Entertainment System (SNES), two coordinated PPUs (PPU1 and PPU2) fetched visual
+                data from a 64 KB VRAM composed of two 8-bit, 32 KB RAM chips.
+                This memory stored tile sets (8x8 pixel graphic units), tile maps (defining where tiles appear), sprite
+                attributes (OAM), and color information (CGRAM).
+                With multiple background layers (BG1-BG3) and a separate sprite layer, the SNES could scroll each layer
+                independently for parallax depth, apply priority and blending effects,
+                and display up to 256 on-screen colors selected from a palette of 32,768.
+                This hardware pipeline allowed artists to build expansive scenes from compact tiles and animate
+                characters as separate sprites without redrawing entire frames.
+                Features like the SNES's Mode 7 enabled real-time rotation, scaling, and pseudo-3D transformations,
+                delivering cinematic camera movement and dynamic world effects never before seen in 2D games.
+            </p>
+            <p>
+                These advancements fundamentally reshaped visual storytelling. Games no longer relied solely on symbolic
+                or abstract imagery;
+                instead, they could convey mood, atmosphere, and a sense of realism through richer shading, smoother
+                animation, and more convincing perspective.
+                Developers combined layered environments, gentle color gradients, and intricate sprite motion to make
+                gameplay worlds more immersive, expressive,
+                and emotionally nuanced - pushing the boundaries of what 2D art could achieve.
+            </p>
         </div>
     </section>
 
-<div class="page-navigation">
-  <a href="16bit-games.html">← Back to Masterpieces of the 16-bit Era</a>
-  <a href="16bit-impact.html">Next: Cultural Legacy of the 16-bit Era →</a>
-</div>
-<footer>
-    History of Video Games — Group Assignment, Software Atelier 1.
-</footer>
+    <section>
+        <div>
+            <img src="./img_8bit_16bit/Sony SPC700 and DSP.jpg">
+        </div>
+        <div>
+            <h2>Sound Evolution</h2>
+            <p>
+                Alongside the advancements in graphics, the 16-bit era brought a revolution in sound design, with audio
+                hardware enabling simulated surround effects for the first time in home gaming.
+                Systems like the SNES incorporated advanced sound subsystems capable of independently processing eight
+                audio channels with precise control over panning, echo, filtering, and phase.
+                A key example is the Sony SPC700-based S-SMP audio subsystem, which combined an 8-bit SPC700 CPU, a
+                16-bit digital signal processor (DSP) for mixing sampled audio, and 64 KB of dedicated PSRAM.
+                Operating completely independently from the main system and clocked at 24.576 MHz on both NTSC and PAL
+                units, the subsystem produced stereo output using eight voices built from BRR-compressed 16-bit audio
+                samples and supported real-time effects such as echo and pitch modulation.
+            </p>
+            <p>
+                By deliberately shifting phase relationships and distributing audio cues across stereo channels,
+                developers could encode soundtracks in a format compatible with Dolby Pro Logic and other
+                surround-decoding technologies.
+                When played through external stereo equipment equipped with these decoders, the signal was expanded into
+                rear-channel audio, creating the illusion of directional or ambient sound behind the player.
+                This ability to deliver pseudo-surround sound marked a significant advancement over the monaural and
+                limited stereo output of earlier 8-bit consoles.
+            </p>
+        </div>
+    </section>
+
+    <div class="page-navigation">
+        <a href="16bit-games.html">← Back to Masterpieces of the 16-bit Era</a>
+        <a href="16bit-impact.html">Next: Cultural Legacy of the 16-bit Era →</a>
+    </div>
+    <footer>
+        History of Video Games — Group Assignment, Software Atelier 1.
+    </footer>
 
 </body>
+
 </html>
