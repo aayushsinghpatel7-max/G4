@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta author="Lorenzo Simone">
+    <meta name="author" content="Lorenzo Simone">
     <meta charset="UTF-8">
     <!-- Loads the main stylesheet for the site's layout, theme, and colors -->
     <link rel="stylesheet" href="../CSS/general.css">
@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../CSS/navigation.css">
     <!-- Sets the viewport to ensure the page scales correctly on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Game input</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>3D Game Input</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
@@ -335,34 +335,32 @@
         </section>
 
         <section>
-            <h2>Core techniques</h2>
-            <ul>
-                <p>
-                    Core techniques in 3D game input systems focus on capturing and interpreting player actions to
-                    control characters and camera movement in a 3D space. These include:
-                    Using raycasting to translate screen coordinates (like mouse clicks) into 3D world positions for
-                    interaction or navigation.
+          <h2>Core techniques</h2>
+          <p>
+            Core techniques in 3D game input systems focus on capturing and interpreting player actions
+            to control characters and camera movement in a 3D space. These include:
+          </p>
+          <ul>
+            <li>Using raycasting to translate screen coordinates (like mouse clicks) into 3D world positions for interaction or navigation.</li>
+            <li>Implementing analog input from joysticks or gamepads to allow smooth, variable-speed movement and camera rotation.</li>
+            <li>Structuring input actions into configurable maps for different devices and gameplay contexts, allowing support for keyboard, gamepad, touch, and VR controllers.</li>
+            <li>Handling input sensitivity, dead zones, and scaling to customize control responsiveness and prevent unintended inputs.</li>
+            <li>Managing multiple players with separate input handlers and supporting runtime rebindings for customizable controls.</li>
+            <li>Utilizing physics engines to apply forces and collisions correlated with player input for realistic movement.</li>
+          </ul>
+        </section>
 
-                    Implementing analog input from joysticks or gamepads to allow smooth, variable-speed movement and
-                    camera rotation.
-                    Structuring input actions into configurable maps for different devices and gameplay contexts,
-                    allowing support for keyboard, gamepad, touch, and VR controllers.
-                    Handling input sensitivity, dead zones, and scaling to customize control responsiveness and prevent
-                    unintended inputs.
-                    Managing multiple players with separate input handlers and supporting runtime rebindings for
-                    customizable controls.
-                    Utilizing physics engines to apply forces and collisions correlated with player input for realistic
-                    movement.
-
-                </p>
-                <section>
-                    <h2>Peripherals</h2>
-                    <p>
-                        Common peripherals used for 3D gaming include: Keyboards (most important keys WASD), game
-                        controllers (so you have more sensibility in race games for example), and now VR
-
-                        <img src="img/input.jpeg" alt="Input of the 3d games." title="The Input of the games.">
-
+        <section>
+          <h2>Peripherals</h2>
+          <p>
+            Common peripherals used for 3D gaming include keyboards (WASD keys), game controllers 
+            (for analog precision), and VR motion systems.
+          </p>
+          <figure>
+            <img src="img/input.jpeg" alt="Input devices used in 3D gaming, including keyboard, controller, and VR headset" title="3D Game Input Devices">
+            <figcaption>Typical input devices for 3D gaming.</figcaption>
+          </figure>
+        </section>
 
     </main>
 
