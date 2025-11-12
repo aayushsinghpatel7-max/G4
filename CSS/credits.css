@@ -3,7 +3,7 @@ body {
   margin: 0;
   min-height: 100vh;            /* keep page tall, not fixed */
   overflow-y: auto;              /* allow scrolling both ways */
-  background: radial-gradient(circle at center, #0a0a0f 0%, #000 80%);
+  background: transparent;
   font-family: 'Courier New', monospace;
   color: #eaeaea;
 }
@@ -21,7 +21,7 @@ body::before {
   background-size: 200px 200px;
   animation: starsMove 30s linear infinite;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 1;
 }
 @keyframes starsMove {
   from { background-position: 0 0; }

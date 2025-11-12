@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <title>Credits</title>
+
+  <!-- Link required CSS -->
   <link rel="stylesheet" href="../CSS/general.css">
   <link rel="stylesheet" href="../CSS/credits.css">
-  <title>Credits</title>
 </head>
 
 <body>
 
-  <!-- GOODBYE -->
+  <!-- Hidden checkbox controls the Goodbye screen -->
   <input type="checkbox" id="noButton" class="goodbye-toggle">
 
-  <!-- SCROLLBAR -->
+  <!-- SCROLL AREA -->
   <div class="credits-viewport">
     <div class="credits-container">
 
       <h1 class="credit-title">GAME DEVELOPMENT TEAM</h1>
 
       <div class="credit-section">
-        <span class="credit-role">Project Leaders:</span> <span class="credit-name">Kyle & Niki</span>
+        <span class="credit-role">Project Leaders:</span>
+        <span class="credit-name">Kyle & Niki</span>
       </div>
+
       <div class="credit-section">
-        <span class="credit-role">CSS Designers:</span> <span class="credit-name">Anna & Victor</span>
+        <span class="credit-role">CSS Designers:</span>
+        <span class="credit-name">Anna & Victor</span>
       </div>
+
       <div class="credit-section">
-        <span class="credit-role">HTML Developers:</span> <span class="credit-name">Entire Team</span>
+        <span class="credit-role">HTML Developers:</span>
+        <span class="credit-name">Entire Team</span>
       </div>
 
       <div class="special-thanks">
@@ -38,8 +45,10 @@
         <p class="end-sub">Restart Game?</p>
 
         <div class="end-buttons">
-          <a href="../CSS/general.html" class="end-btn yes-btn">YES</a>
-          <!-- Label toggles the checkbox above -->
+          <!-- YES restarts (goes to intro page or main general page) -->
+          <a href="../appendix_intro_outro/intro_page.html" class="end-btn yes-btn">YES</a>
+
+          <!-- NO = triggers goodbye -->
           <label for="noButton" class="end-btn no-btn">NO</label>
         </div>
       </div>
@@ -47,7 +56,7 @@
     </div>
   </div>
 
-  <!-- Must be a sibling of #noButton -->
+  <!-- GOODBYE SCREEN -->
   <div class="goodbye-screen">
     <h2>GOODBYE</h2>
   </div>
